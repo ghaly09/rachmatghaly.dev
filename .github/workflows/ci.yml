@@ -1,0 +1,34 @@
+name: "CI"
+
+on: [pull_request]
+
+jobs:
+  build:
+    name: "Build, lint, and test"
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout repo"
+        uses: actions/checkout@v3
+
+      - name: "Set up latest Node LTS"
+        uses: actions/setup-node@v2
+        with:
+          node-version: "lts/*"
+          cache: "yarn"
+
+      - name: "Install dependencies"
+        run: yarn install --frozen-lockfile
+
+      - name: "Check format"
+        run: yarn format:check
+
+      - name: "Build"
+        run: yarn build
+
+      - name: "Lint"
+        run: yarn lint
+
+      - name: "Test"
+        run: yarn test
