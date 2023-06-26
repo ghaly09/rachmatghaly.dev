@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import Footer from "../../Molecules/Footer";
 
 interface LayoutProps {
   children: ReactNode;
@@ -13,7 +14,7 @@ export default function Layout(props: LayoutProps) {
       <div className="">
         <div>{children}</div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }
