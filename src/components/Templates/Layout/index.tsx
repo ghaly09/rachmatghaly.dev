@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import Footer from "../../Molecules/Footer";
+import Header from "../../Molecules/Header";
 
 interface LayoutProps {
   children: ReactNode;
@@ -10,7 +11,7 @@ export default function Layout(props: LayoutProps) {
 
   return (
     <main className="">
-      {/* <Header /> */}
+      <Header />
       <div className="">
         <div>{children}</div>
       </div>
