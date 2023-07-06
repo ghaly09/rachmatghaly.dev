@@ -3,8 +3,6 @@ import React from "react";
 import { ButtonIconFooter } from "../../Atoms/Buttons/Button-Footer";
 
 export default function Footer() {
-  //   console.log(footerConfig.buttonAttributes);
-
   return (
     <footer className="pt-8 pb-2 px-5 lg:px-0">
       <div className="container mx-auto">
