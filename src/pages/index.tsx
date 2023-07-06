@@ -19,9 +19,7 @@ const Index: NextPage = () => {
         ></script>
       </Head>
       <Layout>
-        <div>
-          <p className="text-white">Page home ghaly</p>
-        </div>
+        <div>{/* <p className="text-white">Page home ghaly</p> */}</div>
       </Layout>
       {/* <LandingPageTemplate /> */}
     </>
