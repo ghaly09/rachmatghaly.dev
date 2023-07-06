@@ -1,9 +1,10 @@
 import React from "react";
+import Navbar from "../Navbar";
 
 export default function Header() {
   return (
-    <div>
-      <p className="text-white">Header</p>
-    </div>
+    <header className="fixed w-full">
+      <Navbar />
+    </header>
   );
 }
