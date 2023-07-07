@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import NavLink from "./NavLink";
 import { navConfig } from "@/src/config/navbar-config";
+import { ModeToggle } from "../../Templates/Theme/ModeToggle";
 
 export default function Navbar() {
   return (
@@ -10,6 +11,7 @@ export default function Navbar() {
         {navConfig.map((link, index) => (
           <NavLink href={link.href} page={link.page} key={index} />
         ))}
+        <ModeToggle />
       </div>
     </nav>
   );
