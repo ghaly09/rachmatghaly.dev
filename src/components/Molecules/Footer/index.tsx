@@ -5,7 +5,7 @@ import { ButtonIconFooter } from "../../Atoms/Buttons/Button-Footer";
 export default function Footer() {
   return (
     <footer className="pt-8 pb-2 px-5 lg:px-0">
-      <div className="container mx-auto">
+      <div className="mx-auto">
         <hr className="my-6 border-slate-400" />
         <div className="flex flex-wrap justify-center text-slate-200 font-ghaly text-center lg:text-left">
           Let&apos;s keep in touch!
