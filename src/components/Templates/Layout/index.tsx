@@ -30,7 +30,7 @@ const Layout = (props: LayoutProps) => {
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <main>
           <Header />
-          <div className="max-w-[76rem] mx-auto">
+          <div className="max-w-[68rem] mx-auto">
             <div>{children}</div>
             <Footer />
           </div>
