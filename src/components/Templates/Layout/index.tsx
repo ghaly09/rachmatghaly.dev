@@ -29,7 +29,7 @@ const Layout = (props: LayoutProps) => {
 
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <main>
-          <div className="h-2 bg-gradient-to-r from-[rgb(0,218,210)] to-[rgb(61,224,102)]"></div>
+          <div className="sticky top-0 z-50 w-full h-2 bg-gradient-to-r from-[rgb(0,218,210)] to-[rgb(61,224,102)]"></div>
           <div className="max-w-[76rem] mx-auto">
             <Header />
             <div>{children}</div>
