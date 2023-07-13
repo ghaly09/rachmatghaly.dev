@@ -9,6 +9,7 @@ import SkillsContainer from "../components/Templates/Containers/About-Page/Skill
 import SkillsIcon from "../components/Molecules/ChildContainers/SkillsIcon-container";
 import ContactContainer from "../components/Templates/Containers/About-Page/ContactContainer";
 import ContactDesc from "../components/Atoms/Descriptions/ContactDesc";
+import { Reveal } from "../components/ui/FramerMotion/onReveal";
 
 export default function About() {
   return (
@@ -34,9 +35,11 @@ export default function About() {
       {/* Educations */}
 
       {/* Contact Me */}
-      <ContactContainer>
-        <ContactDesc />
-      </ContactContainer>
+      <Reveal>
+        <ContactContainer>
+          <ContactDesc />
+        </ContactContainer>
+      </Reveal>
     </section>
   );
 }
