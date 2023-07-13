@@ -31,6 +31,8 @@ export default function About() {
         <SkillsIcon />
       </SkillsContainer>
 
+      {/* Educations */}
+
       {/* Contact Me */}
       <ContactContainer>
         <ContactDesc />
