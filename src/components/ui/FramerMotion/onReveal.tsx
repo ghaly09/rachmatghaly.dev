@@ -4,9 +4,16 @@ import * as React from "react";
 interface RevealProps {
   children: JSX.Element;
   width?: "fit-content" | "100%";
+  delay: number;
+  duration: number;
 }
 
-export const Reveal = ({ children, width = "fit-content" }: RevealProps) => {
+export const Reveal = ({
+  children,
+  width = "fit-content",
+  delay = 0.2,
+  duration = 0.5,
+}: RevealProps) => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -28,8 +35,8 @@ export const Reveal = ({ children, width = "fit-content" }: RevealProps) => {
         initial="hidden"
         animate={mainControls}
         transition={{
-          duration: 0.5,
-          delay: 0.2,
+          duration: duration,
+          delay: delay,
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
