@@ -6,6 +6,6 @@ export interface container {
 
 export interface wrapper {
   children: React.ReactNode;
-  delay: number;
-  duration: number;
+  delay?: number;
+  duration?: number;
 }
