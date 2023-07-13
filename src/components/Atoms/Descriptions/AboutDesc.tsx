@@ -7,21 +7,29 @@ export default function AboutDesc() {
         id="text"
         className="font-ghaly text-base pb-3 text-gray-600 dark:text-[#d3d4d6] "
       >
-        Hello, I'm Ghaly. I am a physics student enthusiastic about research,
+        Hello, I'm Ghaly. I am a physics graduate enthusiastic about research,
         teaching, programming, and design activities to build visually
         attractive applications with user-friendly interactions.{" "}
       </p>
       <p className="font-ghaly text-base pb-4 text-gray-600 dark:text-[#d3d4d6] ">
-        I started learning web development in January 2022, I've been fascinated
-        by how software works and how it can be used to solve complex problems
-        and make a positive impact on people's lives. So, I decided to make
-        software engineering to be my professional field.
+        I started learning web development in May 2021, I've been fascinated by
+        how software works and how it can be used to solve complex problems and
+        make a positive impact on people's lives. So, I decided to make software
+        engineering to be my professional field.
         <br />
         Initially, I had no prior experience in web development, but I was
         determined to learn and hone my skills. To achieve this, I turned to
-        various learning resources such as YouTube, Coursera, and the Ruangguru
+        various learning resources such as YouTube, Coursera, and had been
+        graduated from{" "}
+        <span className="border-dotted font-semibold border-b-2 border-orange-500 hover:text-orange-500 dark:hover:text-orange-500">
+          Hacktiv8
+        </span>{" "}
+        and{" "}
+        <span className="border-dotted font-semibold border-b-2 border-blue-300 hover:text-blue-300 dark:hover:text-blue-300">
+          Ruangguru
+        </span>{" "}
         Bootcamp especially{" "}
-        <span className="border-dotted border-b-2 border-[rgb(61,224,102)] hover:text-red-500 dark:hover:text-[rgb(61,224,102)]">
+        <span className="border-dotted font-semibold border-b-2 border-[rgb(61,224,102)] hover:text-red-500 dark:hover:text-[rgb(61,224,102)]">
           frontend development.
         </span>
       </p>
