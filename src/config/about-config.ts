@@ -4,6 +4,12 @@ export type dataAbout = {
     src: string;
     alt: string;
   };
+
+  sortBy: {
+    education: object;
+    certificate: object;
+  };
+
   iconSkills: Array<{
     style: string;
     src: string;
@@ -21,6 +27,7 @@ export interface aboutTypes {
   height: number;
   alt: string;
   title: string;
+  description: string;
 }
 
 export const aboutConfig: dataAbout = {
@@ -29,6 +36,49 @@ export const aboutConfig: dataAbout = {
     src: "https://github.com/ghaly09/rachmatghaly.dev/assets/60167960/add292a3-7255-43a4-97a7-125819387df8",
     alt: "foto-profil-ghaly",
   },
+
+  sortBy: {
+    education: {
+      description: "Here is My Learning Journey",
+      bootCamp: [
+        {
+          eduTitle: "Hacktiv8 Indonesia",
+          major: "Frontend Developer",
+          skills: "",
+          imgLink: "",
+          directLink: "",
+        },
+        {
+          eduTitle: "Ruangguru Camp",
+          major: "Frontend Engineer",
+          skills: "",
+          imgLink: "",
+          directLink: "",
+        },
+      ],
+      university: {
+        eduTitle: "IPB University",
+        major: "Physics",
+        minor: "Information System (Computer Science)",
+      },
+    },
+    certificate: {
+      description: "Here is My Licenses & Certifications",
+      certificates: [
+        {
+          title: "Hacktiv8 Indonesia",
+          imgLink: "",
+          directLink: "",
+        },
+        {
+          title: "Ruangguru Camp",
+          imgLink: "",
+          directLink: "",
+        },
+      ],
+    },
+  },
+
   iconSkills: [
     {
       style: "w-10 md:w-auto",
