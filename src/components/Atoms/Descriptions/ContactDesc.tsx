@@ -9,7 +9,7 @@ export default function ContactDesc() {
           Contact
         </h2>
       </Reveal>
-      <Reveal delay={0.3} duration={0.5}>
+      <Reveal delay={0.3} duration={0.8}>
         <p className="font-ghaly text-gray-600 dark:text-[#d3d4d6] pt-3">
           Do contact me for collaboration, especially frontend works. I’ll be
           happy to help! (find my email in the footer)

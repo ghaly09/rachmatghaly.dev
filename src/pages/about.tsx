@@ -33,7 +33,6 @@ export default function About() {
       {/* Educations */}
 
       {/* Contact Me */}
-
       <ContactContainer>
         <ContactDesc />
       </ContactContainer>
