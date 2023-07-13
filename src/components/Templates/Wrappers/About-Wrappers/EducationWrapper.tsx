@@ -1,12 +1,8 @@
 import { wrapper } from "@/src/lib/utils/Types";
 import { motion } from "framer-motion";
 
-export default function EducationWrapper(
-  props: wrapper,
-  delay: number = 0.6,
-  duration: number = 0.8
-) {
-  const { children } = props;
+export default function EducationWrapper(props: wrapper) {
+  const { delay = 0.6, duration = 0.8, children } = props;
 
   return (
     <motion.div
