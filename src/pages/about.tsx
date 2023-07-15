@@ -33,13 +33,14 @@ export default function About() {
         <SkillsIcon />
       </SkillsContainer>
 
-      {/* Educations */}
+      {/* Educations and Certificates*/}
       <EducationWrapper>
         <TabEduCertificates
           educations={aboutConfig.sortBy.education}
           certificates={aboutConfig.sortBy.certificate}
         />
       </EducationWrapper>
+
       {/* Contact Me */}
       <ContactContainer>
         <ContactDesc />
