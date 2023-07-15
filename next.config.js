@@ -12,7 +12,14 @@ const nextConfig = {
         hostname: "github.com",
       },
     ],
-    domains: ["img.icons8.com", "raw.githubusercontent.com"],
+    domains: [
+      "img.icons8.com",
+      "raw.githubusercontent.com",
+      "drive.google.com",
+      "s3.amazonaws.com",
+      "d2qv16rycic4zo.cloudfront.net",
+      "img.rk-certificate.com",
+    ],
   },
 };
 
