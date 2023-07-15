@@ -21,7 +21,7 @@ export type dataAbout = {
 };
 
 export interface aboutTypes {
-  style?: string;
+  style: string;
   src?: string;
   width?: number;
   height?: number;
@@ -31,6 +31,10 @@ export interface aboutTypes {
   imgLink: string;
   directLink: string;
   type?: string;
+  eduTitle: string;
+  major: string;
+  skills: string[];
+  key: number;
 }
 
 export const aboutConfig: dataAbout = {
@@ -47,24 +51,83 @@ export const aboutConfig: dataAbout = {
       bootCamp: [
         {
           eduTitle: "Hacktiv8 Indonesia",
-          major: "React and Reat Native for Frontend Developer",
-          skills: "",
-          imgLink: "",
-          directLink: "",
+          major: "React and React Native for Frontend Developer",
+          style: "pl-3",
+          skills: [
+            "React.js",
+            "React Native",
+            "Next.js",
+            "Redux",
+            "TypeScript",
+            "JavaScript",
+            "ES6",
+            "HTML",
+            "CSS",
+            "Tailwind CSS",
+          ],
+          imgLink:
+            "https://drive.google.com/uc?id=1VficMaOPoLd41POGpoM_M-_GkwRfINEL",
+          directLink:
+            "https://drive.google.com/file/d/1jhvqxVFyvEVotf4ohFulu9prQPhO1sUO/view?usp=sharing",
         },
         {
           eduTitle: "Ruangguru Camp",
           major: "Frontend Engineer",
-          skills: "",
-          imgLink: "",
+          style: "py-4 pl-4 max-w-[100px]",
+          skills: [
+            "React.js",
+            "Redux",
+            "JavaScript",
+            "ES6",
+            "HTML",
+            "CSS",
+            "Tailwind CSS",
+            "JS-DOM",
+          ],
+          imgLink:
+            "https://drive.google.com/uc?id=1aahWDkurUey8wdw_5TkF35CmhtoeBsw4",
+          directLink:
+            "https://drive.google.com/file/d/1BdtgKXAjjCTlTRyfqzzZ6sgrNLzjgIi1/view?usp=sharing",
+        },
+        {
+          eduTitle: "IPB University",
+          major: "Major, Physics",
+          style: "py-4 pl-4 max-w-[100px]",
+          skills: [
+            "Classical physics",
+            "Modern physics",
+            "Quantum physics",
+            "Thermodynamics",
+            "Electromagnetism",
+            "Wave",
+            "Mechanics",
+            "Optics",
+            "Electricity",
+            "Particle physics",
+            "Fluid mechanics",
+            "+ 20",
+          ],
+          imgLink:
+            "https://drive.google.com/uc?id=1yyh-Rg_lKLq7__CZQfcZfZn8A4cJuL4H",
+          directLink: "",
+        },
+        {
+          eduTitle: "IPB University",
+          major: "Minor, Information System (Computer Science)",
+          style: "py-4 pl-4 max-w-[100px]",
+          skills: [
+            "Algoritms and Programming",
+            "Database Systems",
+            "Software Engineering",
+            "Human and Computer Interaction",
+            "Information System",
+            "+ 10",
+          ],
+          imgLink:
+            "https://drive.google.com/uc?id=1yyh-Rg_lKLq7__CZQfcZfZn8A4cJuL4H",
           directLink: "",
         },
       ],
-      university: {
-        eduTitle: "IPB University",
-        major: "Physics",
-        minor: "Information System (Computer Science)",
-      },
     },
     certificate: {
       type: "certificate",
