@@ -21,13 +21,16 @@ export type dataAbout = {
 };
 
 export interface aboutTypes {
-  style: string;
-  src: string;
-  width: number;
-  height: number;
-  alt: string;
+  style?: string;
+  src?: string;
+  width?: number;
+  height?: number;
+  alt?: string;
   title: string;
   description: string;
+  imgLink: string;
+  directLink: string;
+  type?: string;
 }
 
 export const aboutConfig: dataAbout = {
@@ -39,11 +42,12 @@ export const aboutConfig: dataAbout = {
 
   sortBy: {
     education: {
+      type: "education",
       description: "Here is My Learning Journey",
       bootCamp: [
         {
           eduTitle: "Hacktiv8 Indonesia",
-          major: "Frontend Developer",
+          major: "React and Reat Native for Frontend Developer",
           skills: "",
           imgLink: "",
           directLink: "",
@@ -63,17 +67,64 @@ export const aboutConfig: dataAbout = {
       },
     },
     certificate: {
+      type: "certificate",
       description: "Here is My Licenses & Certifications",
       certificates: [
         {
           title: "Hacktiv8 Indonesia",
-          imgLink: "",
-          directLink: "",
+          description: "Frontend Developer",
+          imgLink:
+            "https://drive.google.com/uc?id=18pjcyKH2OjosTiyjhUbqX17jQdwd6dFF",
+          directLink:
+            "https://drive.google.com/file/d/1jhvqxVFyvEVotf4ohFulu9prQPhO1sUO/view?usp=sharing",
         },
         {
           title: "Ruangguru Camp",
-          imgLink: "",
-          directLink: "",
+          description: "Frontend Engineer",
+          imgLink:
+            "https://drive.google.com/uc?id=1R3ssH80QcIwOOmBLw32C_MMc8le0TZcj",
+          directLink:
+            "https://drive.google.com/file/d/1BdtgKXAjjCTlTRyfqzzZ6sgrNLzjgIi1/view?usp=sharing",
+        },
+        {
+          title: "Bash Shell Scripting",
+          description: "Coursera",
+          imgLink:
+            "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~TBX2AT3SXVNB/CERTIFICATE_LANDING_PAGE~TBX2AT3SXVNB.jpeg",
+          directLink:
+            "https://www.coursera.org/account/accomplishments/verify/TBX2AT3SXVNB",
+        },
+        {
+          title: "Adobe Illustrator",
+          description: "Coursera",
+          imgLink:
+            "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~FQJ6YDQ5Q355/CERTIFICATE_LANDING_PAGE~FQJ6YDQ5Q355.jpeg",
+          directLink:
+            "https://www.coursera.org/account/accomplishments/verify/FQJ6YDQ5Q355",
+        },
+        {
+          title: "React.js and React Native Styling Components",
+          description: "Hacktiv8 Indonesia",
+          imgLink:
+            "https://d2qv16rycic4zo.cloudfront.net/images/cd7dda4d-5ebd-4c9d-a8fa-84c7222154e5_medium.png",
+          directLink:
+            "https://sertiva.id/credential/cd7dda4d-5ebd-4c9d-a8fa-84c7222154e5",
+        },
+        {
+          title: "ECMAScript 2015 (ES6)",
+          description: "Hacktiv8 Indonesia",
+          imgLink:
+            "https://d2qv16rycic4zo.cloudfront.net/images/4760ed46-0c1e-4fce-90fe-bd59426c7fa2_medium.png",
+          directLink:
+            "https://sertiva.id/credential/4760ed46-0c1e-4fce-90fe-bd59426c7fa2",
+        },
+        {
+          title: "Global AI Bootcamp 2018",
+          description: "Dicoding",
+          imgLink:
+            "https://drive.google.com/uc?id=1g559Gl7bcWrdK0PVctO4arwvKZKoRFZA",
+          directLink:
+            "https://drive.google.com/file/d/1SmYQXvZl64zK1LH-TJksHcoCW4rAiNAJ/view?usp=sharing",
         },
       ],
     },
