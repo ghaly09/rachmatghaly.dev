@@ -3,6 +3,7 @@ import * as React from "react";
 
 interface RevealProps {
   children: JSX.Element;
+  className?: string;
   width?: "fit-content" | "100%";
   delay: number;
   duration: number;
@@ -10,6 +11,7 @@ interface RevealProps {
 
 export const Reveal = ({
   children,
+  className,
   width = "fit-content",
   delay = 0.2,
   duration = 0.5,
@@ -26,7 +28,11 @@ export const Reveal = ({
   }, [isInView]);
 
   return (
-    <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
+    <div
+      ref={ref}
+      style={{ position: "relative", width, overflow: "hidden" }}
+      className={className}
+    >
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
