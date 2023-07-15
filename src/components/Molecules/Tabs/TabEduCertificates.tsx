@@ -4,6 +4,7 @@ import * as React from "react";
 import EduCertificateDesc from "../../Atoms/Descriptions/EduCertificate";
 import { Reveal } from "../../ui/FramerMotion/onReveal";
 import CardCertificate from "../Cards/Card-Certificate";
+import CardEducation from "../Cards/Card-Education";
 
 interface Types {
   certificates: {
@@ -56,15 +57,27 @@ export function TabEduCertificates({ educations, certificates }: Types) {
         <EduCertificateDesc desc={data?.description} />
       </Reveal>
       <div className="flex flex-row flex-wrap gap-4 justify-center md:justify-normal">
-        {data.type == "certificate" &&
-          data?.certificates.map((data: aboutTypes) => (
-            <CardCertificate
-              title={data?.title}
-              description={data?.description}
-              imgLink={data?.imgLink}
-              directLink={data?.directLink}
-            />
-          ))}
+        {data.type == "certificate"
+          ? data?.certificates.map((value: aboutTypes, index: number) => (
+              <CardCertificate
+                key={index}
+                title={value?.title}
+                description={value?.description}
+                imgLink={value?.imgLink}
+                directLink={value?.directLink}
+              />
+            ))
+          : data?.bootCamp.map((value: aboutTypes, index: number) => (
+              <CardEducation
+                key={index}
+                title={value?.eduTitle}
+                major={value?.major}
+                imgLink={value?.imgLink}
+                directLink={value?.directLink}
+                style={value?.style}
+                skills={value?.skills}
+              />
+            ))}
       </div>
     </section>
   );
