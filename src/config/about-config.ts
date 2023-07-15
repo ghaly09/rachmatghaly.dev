@@ -122,7 +122,7 @@ export const aboutConfig: dataAbout = {
           title: "Global AI Bootcamp 2018",
           description: "Dicoding",
           imgLink:
-            "https://drive.google.com/uc?id=1g559Gl7bcWrdK0PVctO4arwvKZKoRFZA",
+            "https://drive.google.com/uc?id=1al9_5R89bruLqNOEJcJwTnYUZq-c8MdP",
           directLink:
             "https://drive.google.com/file/d/1SmYQXvZl64zK1LH-TJksHcoCW4rAiNAJ/view?usp=sharing",
         },
