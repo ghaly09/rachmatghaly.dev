@@ -22,8 +22,8 @@ export function TabEduCertificates({ educations, certificates }: Types) {
   return (
     <section className="flex flex-col items-center justify-center font-ghaly">
       <Reveal delay={0.2} duration={0.5}>
-        <Tabs defaultValue={active} className="w-[300px] sm:w-[400px]">
-          <TabsList className="grid w-full grid-cols-2 h-[50px] sm:h-[38px] bg-transparent">
+        <Tabs defaultValue={active} className="w-[300px] sm:w-[400px] ">
+          <TabsList className="grid w-full grid-cols-2 h-[50px] sm:h-[38px] bg-transparent text-gray-400 dark:text-gray-500">
             <TabsTrigger
               className={`h-[40px] sm:h-[47px] text-xl lg:text-2xl font-bold`}
               value="Educations"
