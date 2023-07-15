@@ -1,68 +1,71 @@
 import { Tabs, TabsList, TabsTrigger } from "@/src/components/ui/tabs";
-import React from "react";
-import EducationDesc from "../../Atoms/Descriptions/EducationDesc";
+import { aboutTypes } from "@/src/config/about-config";
+import * as React from "react";
+import EduCertificateDesc from "../../Atoms/Descriptions/EduCertificate";
 import { Reveal } from "../../ui/FramerMotion/onReveal";
+import CardCertificate from "../Cards/Card-Certificate";
 
 interface Types {
-  educations: {
-    description?: string;
-    bootCamp?: object;
-    university?: object;
-  };
   certificates: {
+    type?: string;
     description?: string;
     certificates?: object;
   };
+
+  educations: any;
 }
 
 export function TabEduCertificates({ educations, certificates }: Types) {
   const [data, setData] = React.useState(educations);
-  // const [colorTrend, setColorTrend] = React.useState("");
-  // const [colorFire, setColorFire] = React.useState("");
+  const [active, setActive] = React.useState("Educations");
 
   return (
-    <section className="flex flex-col items-center">
+    <section className="flex flex-col items-center justify-center font-ghaly">
       <Reveal delay={0.2} duration={0.5}>
-        <Tabs defaultValue="Educations" className="w-[300px] sm:w-[400px] mb-2">
-          <TabsList className="grid w-full grid-cols-2 h-[50px] sm:h-[55px] bg-[rgb(0,218,210)] dark:bg-gray-800">
+        <Tabs defaultValue={active} className="w-[300px] sm:w-[400px]">
+          <TabsList className="grid w-full grid-cols-2 h-[50px] sm:h-[38px] bg-transparent">
             <TabsTrigger
-              className="h-[40px] sm:h-[47px] text-xl lg:text-2xl text-black dark:text-white font-bold"
+              className={`h-[40px] sm:h-[47px] text-xl lg:text-2xl font-bold`}
               value="Educations"
               onClick={() => {
                 setData(educations);
-                // setColorTrend("text-[#D1512D]");
-                // setColorFire("");
+                setActive("Educations");
               }}
             >
-              {/* <i
-              className={`fa-solid fa-pizza-slice ${colorTrend} pr-2`}
-              aria-hidden="true"
-            ></i>{" "} */}
               Educations
             </TabsTrigger>
             <TabsTrigger
-              className="h-[40px] sm:h-[47px] text-xl lg:text-2xl text-black dark:text-white font-bold"
+              className={`h-[40px] sm:h-[47px] text-xl lg:text-2xl font-bold`}
               value="Certificates"
               onClick={() => {
                 setData(certificates);
-                // setColorFire("text-[#F5D97E]");
-                // setColorTrend("");
+                setActive("Certificates");
               }}
             >
-              {/* <i
-              className={`fa-solid fa-bolt-lightning ${colorFire} pr-2`}
-              aria-hidden="true"
-            ></i>{" "} */}
               Certificates
             </TabsTrigger>
           </TabsList>
         </Tabs>
       </Reveal>
+      <Reveal delay={0.2} duration={0.5}>
+        <div className="w-screen h-[18px] mx-auto bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[rgba(0,255,247,0.42)] dark:from-[rgb(0,218,210)] via-white to-white dark:via-[#0e1111] dark:to-[#0e1111] "></div>
+      </Reveal>
 
       {/* Contents */}
       <Reveal delay={0.3} duration={0.8}>
-        <EducationDesc desc={data?.description} />
+        <EduCertificateDesc desc={data?.description} />
       </Reveal>
+      <div className="flex flex-row flex-wrap gap-4 justify-center md:justify-normal">
+        {data.type == "certificate" &&
+          data?.certificates.map((data: aboutTypes) => (
+            <CardCertificate
+              title={data?.title}
+              description={data?.description}
+              imgLink={data?.imgLink}
+              directLink={data?.directLink}
+            />
+          ))}
+      </div>
     </section>
   );
 }
