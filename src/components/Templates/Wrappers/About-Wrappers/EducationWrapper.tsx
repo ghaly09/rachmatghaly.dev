@@ -1,4 +1,4 @@
-import { wrapper } from "@/src/lib/utils/Types";
+import { wrapper } from "@/src/lib/Types";
 
 export default function EducationWrapper(props: wrapper) {
   const { children } = props;
