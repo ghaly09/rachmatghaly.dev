@@ -4,14 +4,6 @@ import Link from "next/link";
 import * as React from "react";
 
 export default function NavLink({ href, page, style, onclick }: navProps) {
-  // const [active, setActive] = React.useState({ style: "", page });
-
-  // React.useEffect(() => {
-  //   style = "";
-  // }, []);
-
-  // console.log(active.page);
-
   return (
     <Link
       className={cn(
