@@ -5,6 +5,7 @@ import ProjectsWrapper from "../components/Templates/Wrappers/Projects-Wrappers/
 import { Card } from "../components/ui/card";
 import { projectsConfig } from "../config/projects-config";
 import CardProject from "../components/Molecules/Cards/Card-Project";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -17,14 +18,16 @@ export default function Projects() {
         {projectsConfig.dataProjects.map((data, index) => {
           return (
             <ProjectsWrapper key={index}>
-              <CardProject
-                title={data?.title}
-                imgSrc={data?.imgSrc}
-                description={data?.description}
-                technologies={data?.technologies}
-                date={data?.date}
-                directLink={data?.directLink}
-              />
+              <Link href={data?.directLink}>
+                <CardProject
+                  title={data?.title}
+                  imgSrc={data?.imgSrc}
+                  description={data?.description}
+                  technologies={data?.technologies}
+                  date={data?.date}
+                  directLink={data?.directLink}
+                />
+              </Link>
             </ProjectsWrapper>
           );
         })}
