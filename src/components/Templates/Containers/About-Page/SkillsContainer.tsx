@@ -1,4 +1,4 @@
-import { container } from "@/src/lib/utils/Types";
+import { container } from "@/src/lib/Types";
 import { motion } from "framer-motion";
 
 export default function SkillsContainer(props: container) {
