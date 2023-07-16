@@ -76,8 +76,7 @@ export const aboutConfig: dataAbout = {
           ],
           imgLink:
             "https://drive.google.com/uc?id=1VficMaOPoLd41POGpoM_M-_GkwRfINEL",
-          directLink:
-            "https://drive.google.com/file/d/1jhvqxVFyvEVotf4ohFulu9prQPhO1sUO/view?usp=sharing",
+          directLink: "",
         },
         {
           eduTitle: "Ruangguru Camp",
@@ -105,8 +104,7 @@ export const aboutConfig: dataAbout = {
           ],
           imgLink:
             "https://drive.google.com/uc?id=1aahWDkurUey8wdw_5TkF35CmhtoeBsw4",
-          directLink:
-            "https://drive.google.com/file/d/1BdtgKXAjjCTlTRyfqzzZ6sgrNLzjgIi1/view?usp=sharing",
+          directLink: "h",
         },
         {
           eduTitle: "IPB University",
