@@ -116,7 +116,7 @@
     transition: transform 0.25s ease-out;
   }
 
-  .line-effect:hover .hover-underline-animation::after {
+  .line-effect .hover-underline-animation::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
