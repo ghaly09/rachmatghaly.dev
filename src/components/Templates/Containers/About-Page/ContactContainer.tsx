@@ -1,4 +1,4 @@
-import { container } from "@/src/lib/utils/Types";
+import { container } from "@/src/lib/Types";
 
 export default function ContactContainer(props: container) {
   const { children } = props;
