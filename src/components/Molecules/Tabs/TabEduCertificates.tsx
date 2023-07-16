@@ -56,7 +56,7 @@ export function TabEduCertificates({ educations, certificates }: Types) {
       <Reveal delay={0.3} duration={0.8}>
         <EduCertificateDesc desc={data?.description} />
       </Reveal>
-      <div className="flex flex-row flex-wrap gap-4 justify-center md:justify-normal">
+      <div className="flex flex-row flex-wrap gap-4 justify-center lg:justify-normal">
         {data.type == "certificate"
           ? data?.certificates.map((value: aboutTypes, index: number) => (
               <CardCertificate
