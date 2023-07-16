@@ -1,4 +1,4 @@
-import { container } from "@/src/lib/utils/Types";
+import { container } from "@/src/lib/Types";
 import React from "react";
 
 export default function AboutContainer(props: container) {
