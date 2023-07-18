@@ -13,7 +13,7 @@ export interface wrapper {
 export type PropProjectTypes = {
   title: string;
   description: string;
-  technologies: string[];
+  technologies: any;
   date: string;
   imgSrc: string;
   directLink: string;
