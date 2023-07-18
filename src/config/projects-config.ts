@@ -30,7 +30,7 @@ export const projectsConfig: projectTypes = {
     {
       title: "Weather.ing App",
       imgSrc:
-        "https://drive.google.com/uc?id=1iCR2Iwvl52bgvJdwS3uQ0Nev74XOLvIl",
+        "https://res.cloudinary.com/druckyjuu/image/upload/v1689703241/Projects/weatherApp_rll3ln.svg",
       description:
         "A Monitoring Weather App of all locations in the world by using API from OpenWeather API, as a practice in Javascript, HTML and CSS.",
       technologies: [{ icon: SiJavascript, iconName: "Javascript" }],
@@ -40,7 +40,7 @@ export const projectsConfig: projectTypes = {
     {
       title: "Calculator Javascript Project",
       imgSrc:
-        "https://drive.google.com/uc?id=1l0IScrnp6oiBPjUjHhnCa1-7wl9bPKrY",
+        "https://res.cloudinary.com/druckyjuu/image/upload/v1689703010/Projects/calculator_itrwdx.svg",
       description:
         "After I learned about DOM (Document Object Model), I try to make a mini project to apply my knowledge, and Woala! here it this!",
       technologies: [{ icon: SiJavascript, iconName: "Javascript" }],
@@ -71,7 +71,7 @@ export const projectsConfig: projectTypes = {
     {
       title: "10+ Design Projects",
       imgSrc:
-        "https://drive.google.com/uc?id=1jvi1YUrKT17WO0ZcGkQwNkAUlcl7yR3G",
+        "https://res.cloudinary.com/druckyjuu/image/upload/v1689703240/Projects/10Designs_iy6t0q.svg",
       description:
         "I made Bunch of Logo, Poster and Banner Projects for many Organizations, Teams and Campus Project.",
       technologies: [
