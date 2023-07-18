@@ -17,7 +17,7 @@ export default function ProjectsContainer({ children }: container) {
 
   return (
     <motion.ul
-      className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center lg:justify-between items-start px-5 lg:px-0 mt-3"
+      className="flex flex-col sm:flex-row flex-wrap gap-[19px] justify-center lg:justify-start items-start px-5 lg:px-0 mt-3"
       variants={container}
       initial="hidden"
       animate="visible"
