@@ -19,6 +19,7 @@ const nextConfig = {
       "s3.amazonaws.com",
       "d2qv16rycic4zo.cloudfront.net",
       "img.rk-certificate.com",
+      "res.cloudinary.com",
     ],
   },
 };
