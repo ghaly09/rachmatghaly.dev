@@ -1,6 +1,13 @@
-import { aboutTypes } from "@/src/config/about-config";
 import Image from "next/image";
-import React from "react";
+
+interface PropTypes {
+  style: string;
+  src: string;
+  width: number;
+  height: number;
+  alt: string;
+  title: string;
+}
 
 export default function IconSkill({
   style,
@@ -9,7 +16,7 @@ export default function IconSkill({
   height,
   alt,
   title,
-}: aboutTypes) {
+}: PropTypes) {
   return (
     <div className={style}>
       {" "}
