@@ -22,10 +22,10 @@ export type dataAbout = {
 
 export interface aboutTypes {
   style: string;
-  src?: string;
+  src: string;
   width?: number;
   height?: number;
-  alt?: string;
+  alt: string;
   title: string;
   description: string;
   imgLink: string;
