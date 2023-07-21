@@ -35,7 +35,8 @@ export const projectsConfig: projectTypes = {
         "A Generating Gradient App with many features to help Developers & designers, as a practice in Javascript, HTML and CSS.",
       technologies: [{ icon: SiJavascript, iconName: "Javascript" }],
       date: "July 13, 2021",
-      directLink: "https://github.com/ghaly09/gradient-generator",
+      directLink:
+        "https://github.com/FinalProject01-Kel-4-Hacktiv8/FP01-Kel04-news-app",
     },
     {
       title: "Gradient Generator App",
