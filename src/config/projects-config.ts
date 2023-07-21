@@ -28,6 +28,16 @@ export interface projectTypes {
 export const projectsConfig: projectTypes = {
   dataProjects: [
     {
+      title: "BEKER (Berita Keren)",
+      imgSrc:
+        "https://res.cloudinary.com/druckyjuu/image/upload/v1689772070/Projects/gradientGenerator_zy8ltf.svg",
+      description:
+        "A Generating Gradient App with many features to help Developers & designers, as a practice in Javascript, HTML and CSS.",
+      technologies: [{ icon: SiJavascript, iconName: "Javascript" }],
+      date: "July 13, 2021",
+      directLink: "https://github.com/ghaly09/gradient-generator",
+    },
+    {
       title: "Gradient Generator App",
       imgSrc:
         "https://res.cloudinary.com/druckyjuu/image/upload/v1689772070/Projects/gradientGenerator_zy8ltf.svg",
