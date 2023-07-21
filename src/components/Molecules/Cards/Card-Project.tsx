@@ -36,22 +36,19 @@ export default function CardProject({
 
   return (
     <Card
-      className="flex flex-col-reverse w-fit sm:max-w-[250px] lg:max-w-[350px] justify-between font-ghaly rounded-[6px] cursor-pointer active:scale-[0.90] border-gray-300 dark:border-gray-500 dark:bg-[#0e1111] hover:scale-[1.02] hover:duration-300 animate-shadow hover:shadow-lg"
+      className="relative flex flex-col-reverse w-fit sm:w-[350px] lg:max-w-[350px] justify-between font-ghaly rounded-[6px] cursor-pointer active:scale-[0.90] border-gray-300 dark:border-gray-500 dark:bg-[#0e1111] hover:scale-[1.02] hover:duration-300 animate-shadow hover:shadow-lg"
       onMouseOver={() => setLineHover("line-effect")}
       onMouseLeave={() => setLineHover("")}
       onClick={handleDirectLink}
     >
-      {" "}
       <CardHeader className="p-4">
         {/* Icons Tech */}
-        <div className="flex flex-row">
+        <div className="absolute top-1/2 right-3 flex flex-row rounded-t-[3px] py-[5px] px-1 bg-white dark:bg-[#0e1111] ">
           {technologies.map((tech: any, index: number) => (
             <IconTech key={index} icon={tech.icon} iconName={tech.iconName} />
           ))}
-        </div>
-
+        </div>{" "}
         <CardTitle>{title}</CardTitle>
-
         <CardDescription className="w-auto dark:text-[#d3d4d6] line-clamp-3">
           {description}
         </CardDescription>
@@ -60,7 +57,7 @@ export default function CardProject({
       <CardContent className="p-0">
         <div className="w-fit">
           <Image
-            className={`object-cover w-screen max-h-[400px] sm:w-[350px] sm:max-h-[180px] rounded-t-sm cursor-pointer`}
+            className={`object-cover w-screen max-h-[180px] sm:w-[350px] sm:max-h-[180px] rounded-t-sm cursor-pointer`}
             src={imgSrc}
             width={350}
             height={300}
