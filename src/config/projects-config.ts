@@ -30,7 +30,7 @@ export interface projectTypes {
 export const projectsConfig: projectTypes = {
   dataProjects: [
     {
-      title: "BEKER (Berita Keren)",
+      title: "BEKER [Berita Keren]",
       imgSrc:
         "https://res.cloudinary.com/druckyjuu/image/upload/v1689772070/Projects/gradientGenerator_zy8ltf.svg",
       description:
@@ -39,7 +39,6 @@ export const projectsConfig: projectTypes = {
         { icon: FaReact, iconName: "React.js" },
         { icon: SiRedux, iconName: "Redux" },
         { icon: SiTailwindcss, iconName: "Tailwindcss" },
-        { icon: SiJavascript, iconName: "Javascript" },
         { icon: SiVercel, iconName: "Vercel" },
       ],
       date: "July 13, 2021",
