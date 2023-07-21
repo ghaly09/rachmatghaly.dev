@@ -2,6 +2,8 @@ import * as React from "react";
 import {
   SiTailwindcss,
   SiNextdotjs,
+  SiRedux,
+  SiVercel,
   SiJavascript,
   SiAdobeillustrator,
   SiAdobephotoshop,
@@ -33,7 +35,13 @@ export const projectsConfig: projectTypes = {
         "https://res.cloudinary.com/druckyjuu/image/upload/v1689772070/Projects/gradientGenerator_zy8ltf.svg",
       description:
         "A News App building by React.js for showing tthe Latest News in the World and The First Final Project of Hacktiv8",
-      technologies: [{ icon: SiJavascript, iconName: "Javascript" }],
+      technologies: [
+        { icon: FaReact, iconName: "React.js" },
+        { icon: SiRedux, iconName: "Redux" },
+        { icon: SiTailwindcss, iconName: "Tailwindcss" },
+        { icon: SiJavascript, iconName: "Javascript" },
+        { icon: SiVercel, iconName: "Vercel" },
+      ],
       date: "July 13, 2021",
       directLink:
         "https://github.com/FinalProject01-Kel-4-Hacktiv8/FP01-Kel04-news-app",
