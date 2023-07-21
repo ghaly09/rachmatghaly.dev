@@ -19,7 +19,7 @@ export function IconTech({ icon, iconName }: propIcon) {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>
-          <span className="bg-transparent w-7 text-xl text-gray-700 dark:text-white mb-1">
+          <span className="bg-transparent px-[3px] text-[18px] text-gray-700 dark:text-white">
             {React.createElement(eval(icon))}
           </span>
         </TooltipTrigger>
