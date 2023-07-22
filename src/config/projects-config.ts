@@ -32,7 +32,7 @@ export const projectsConfig: projectTypes = {
     {
       title: "MovieCat",
       imgSrc:
-        "https://res.cloudinary.com/druckyjuu/image/upload/v1690020849/Projects/BEKER_ujrkii.svg",
+        "https://res.cloudinary.com/druckyjuu/image/upload/v1690025628/Projects/MovieCat_jrjdbg.svg",
       description:
         "A Movie Catalog created with Next.js for showing All Movies, Series, and TV-Shows even Trending and Popular Movies, The Second Final Project of Hacktiv8.",
       technologies: [
