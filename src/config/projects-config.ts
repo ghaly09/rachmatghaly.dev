@@ -30,14 +30,29 @@ export interface projectTypes {
 export const projectsConfig: projectTypes = {
   dataProjects: [
     {
+      title: "MovieCat",
+      imgSrc:
+        "https://res.cloudinary.com/druckyjuu/image/upload/v1690020849/Projects/BEKER_ujrkii.svg",
+      description:
+        "A Movie Catalog created with Next.js for showing All Movies, Series, and TV-Shows even Trending and Popular Movies, The Second Final Project of Hacktiv8.",
+      technologies: [
+        { icon: SiNextdotjs, iconName: "Next.js" },
+        { icon: SiRedux, iconName: "Redux" },
+        { icon: SiTailwindcss, iconName: "Tailwindcss" },
+        { icon: SiVercel, iconName: "Vercel" },
+      ],
+      date: "July 13, 2021",
+      directLink:
+        "https://github.com/ghaly09/MovieCatalog-Kel07-FinalProject04-Hacktiv8",
+    },
+    {
       title: "BEKER [Berita Keren]",
       imgSrc:
         "https://res.cloudinary.com/druckyjuu/image/upload/v1690020849/Projects/BEKER_ujrkii.svg",
       description:
-        "A News App building by React.js for showing tthe Latest News in the World and The First Final Project of Hacktiv8",
+        "A News App created with React.js for showing the Latest News in the World and The First Final Project of Hacktiv8",
       technologies: [
         { icon: FaReact, iconName: "React.js" },
-        { icon: SiRedux, iconName: "Redux" },
         { icon: SiTailwindcss, iconName: "Tailwindcss" },
         { icon: SiVercel, iconName: "Vercel" },
       ],
