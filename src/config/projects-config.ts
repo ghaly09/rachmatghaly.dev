@@ -32,7 +32,7 @@ export const projectsConfig: projectTypes = {
     {
       title: "BEKER [Berita Keren]",
       imgSrc:
-        "https://res.cloudinary.com/druckyjuu/image/upload/v1689772070/Projects/gradientGenerator_zy8ltf.svg",
+        "https://res.cloudinary.com/druckyjuu/image/upload/v1690020849/Projects/BEKER_ujrkii.svg",
       description:
         "A News App building by React.js for showing tthe Latest News in the World and The First Final Project of Hacktiv8",
       technologies: [
