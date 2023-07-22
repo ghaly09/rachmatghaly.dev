@@ -1,5 +1,6 @@
 import * as React from "react";
 import {
+  SiReactquery,
   SiTailwindcss,
   SiNextdotjs,
   SiRedux,
@@ -11,6 +12,7 @@ import {
 } from "react-icons/Si";
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/Io";
+import { TbBrandReactNative } from "react-icons/Tb";
 import { FiFigma } from "react-icons/fi";
 import { IoLogoYoutube } from "react-icons/Io";
 import { AiFillVideoCamera } from "react-icons/Ai";
@@ -29,6 +31,37 @@ export interface projectTypes {
 
 export const projectsConfig: projectTypes = {
   dataProjects: [
+    {
+      title: "StayDoors Mobile",
+      imgSrc:
+        "https://res.cloudinary.com/druckyjuu/image/upload/v1690025628/Projects/MovieCat_jrjdbg.svg",
+      description:
+        "A Hotels Reservation App using React Native for finding and booking many Hotels and Destinations.",
+      technologies: [
+        { icon: TbBrandReactNative, iconName: "React Native" },
+        { icon: SiRedux, iconName: "Redux" },
+      ],
+      date: "July 13, 2021",
+      directLink:
+        "https://github.com/FinalProject03-Kel04-Hacktiv8/Kel04-FP03-Hacktiv8-Hotel-Reservation-MobileApp",
+    },
+    {
+      title: "Jajan.id",
+      imgSrc:
+        "https://res.cloudinary.com/druckyjuu/image/upload/v1690025628/Projects/MovieCat_jrjdbg.svg",
+      description:
+        "An Ecommerce WebApp created with Next.js for consumers and admins who can buy, sell, and check reports using an admin dashboard.",
+      technologies: [
+        { icon: SiNextdotjs, iconName: "Next.js" },
+        { icon: SiReactquery, iconName: "React Query" },
+        { icon: SiRedux, iconName: "Redux" },
+        { icon: SiTailwindcss, iconName: "Tailwindcss" },
+        { icon: SiVercel, iconName: "Vercel" },
+      ],
+      date: "July 13, 2021",
+      directLink:
+        "https://github.com/FinalProject02-Kel-1-Hacktiv8/Kel01-FP02-Hacktiv8-web-ecommerce",
+    },
     {
       title: "MovieCat",
       imgSrc:
