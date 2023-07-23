@@ -51,12 +51,12 @@ export default function StatusAndResume() {
       <motion.div className={clsx("flex gap-2")} initial="hide" animate="show">
         <motion.div
           variants={animation}
-          transition={{ delay: 1.3 }}
+          transition={{ delay: 1.2 }}
           className={clsx("relative z-10")}
         >
           <motion.div
             variants={isFreeVariants}
-            transition={{ delay: 4 + 1.5, duration: 0.4 }}
+            transition={{ delay: 3 + 1.5, duration: 0.4 }}
             className="flex flex-row items-center"
           >
             <span className="relative flex h-4 w-4 mr-2">
@@ -69,7 +69,7 @@ export default function StatusAndResume() {
           <motion.div
             initial={{ x: -48, opacity: 0, pointerEvents: "none" }}
             animate={{ x: 0, opacity: 1, pointerEvents: "auto" }}
-            transition={{ delay: 4 + 1.6, duration: 0.4 }}
+            transition={{ delay: 3 + 1.6, duration: 0.4 }}
             className={clsx("absolute top-0 left-0 flex flex-row items-center")}
           >
             <BsFillFileEarmarkTextFill className="mr-2 h-[18px] w-[18px]" />{" "}
