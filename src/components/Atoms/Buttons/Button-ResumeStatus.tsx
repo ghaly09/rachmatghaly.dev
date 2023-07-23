@@ -46,7 +46,7 @@ export default function StatusAndResume() {
     <Link
       href={"https://www.linkedin.com/in/rachmat-ghaly/"}
       target="_blank"
-      className="flex flex-row items-center font-ghaly font-semibold cursor-pointer text-slate-300 hover:text-white"
+      className="flex flex-row items-center font-ghaly font-semibold cursor-pointer text-gray-600 hover:text-[rgb(27,197,191)] dark:text-slate-300 dark:hover:text-white"
     >
       <motion.div className={clsx("flex gap-2")} initial="hide" animate="show">
         <motion.div
@@ -60,7 +60,7 @@ export default function StatusAndResume() {
             className="flex flex-row items-center"
           >
             <span className="relative flex h-4 w-4 mr-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 dark:bg-white opacity-75"></span>
               <span className="relative inline-flex top-1 left-1 rounded-full h-2 w-2 bg-[rgb(0,218,210)]"></span>
             </span>
             AVAILABLE FOR HIRE
