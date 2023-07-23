@@ -34,7 +34,7 @@ export const projectsConfig: projectTypes = {
     {
       title: "StayDoors Mobile",
       imgSrc:
-        "https://res.cloudinary.com/druckyjuu/image/upload/v1690025628/Projects/MovieCat_jrjdbg.svg",
+        "https://res.cloudinary.com/druckyjuu/image/upload/v1690060543/Projects/Jajan.id_agg7wv.svg",
       description:
         "A Hotels Reservation App using React Native for finding and booking many Hotels and Destinations.",
       technologies: [
@@ -48,7 +48,7 @@ export const projectsConfig: projectTypes = {
     {
       title: "Jajan.id",
       imgSrc:
-        "https://res.cloudinary.com/druckyjuu/image/upload/v1690025628/Projects/MovieCat_jrjdbg.svg",
+        "https://res.cloudinary.com/druckyjuu/image/upload/v1690084275/Projects/Jajan.id_zicenm.svg",
       description:
         "An Ecommerce WebApp created with Next.js for consumers and admins who can buy, sell, and check reports using an admin dashboard.",
       technologies: [
