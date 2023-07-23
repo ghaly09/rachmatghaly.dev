@@ -1,13 +1,11 @@
 import { NextPage } from "next";
-// import LandingPageTemplate from "../../templates/LandingPage/LandingPageTemplate";
+import HomeDesc from "../components/Atoms/Descriptions/HomeDesc";
 
 const Index: NextPage = () => {
   return (
-    <>
-      <div>{/* <p className="text-white">Page home ghaly</p> */}</div>
-
-      {/* <LandingPageTemplate /> */}
-    </>
+    <section>
+      <HomeDesc />
+    </section>
   );
 };
 
