@@ -23,10 +23,12 @@ export default function HomeDesc() {
   return (
     <div className="mt-32">
       <SlideReveal delay={0.2} duration={0.5}>
-        <h2 className="text-2xl md:text-5xl text-white font-bold">Hi!</h2>
+        <h2 className="text-2xl md:text-5xl text-[#0e1111] dark:text-white font-bold">
+          Hi!
+        </h2>
       </SlideReveal>
       <SlideReveal delay={0.3} duration={0.5}>
-        <h2 className="text-3xl md:text-6xl text-white font-bold">
+        <h2 className="text-3xl md:text-6xl text-[#0e1111] dark:text-white font-bold">
           I'm Rachmat
           <span
             className={`font-ghaly ${ghalyEffect} px-2 text-transparent focus:text-transparent bg-clip-text bg-gradient-to-r from-[rgb(0,218,210)] to-[rgb(61,224,102)]`}
@@ -36,7 +38,7 @@ export default function HomeDesc() {
         </h2>
       </SlideReveal>
       <SlideReveal delay={0.4} duration={0.5}>
-        <p className="text-sm md:text-xl max-w-2xl pb-5 text-slate-200 font-base font-sans mt-5">
+        <p className="text-sm md:text-xl max-w-2xl pb-5 text-gray-600 dark:text-slate-200 font-base font-sans mt-5">
           a <span className="font-semibold">Front-End Engineer</span> who loves
           clean design and modern UI design activities to build visually
           attractive applications with user-friendly interactions.
@@ -46,7 +48,7 @@ export default function HomeDesc() {
       <div className="flex flex-row gap-5 mt-5">
         <Reveal delay={0.5} duration={0.5}>
           <Button
-            className="bg-[#0e1111] border-[1px] border-slate-600 text-[15px] font-ghaly rounded-sm"
+            className="dark:bg-[#0e1111] border-[1px] border-slate-600 text-[15px] font-ghaly font-semibold rounded-sm cursor-pointer dark:hover:bg-gray-800 hover:duration-300"
             variant={"outline"}
           >
             <Link href={"/about"}>More about me</Link>
