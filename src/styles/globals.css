@@ -132,10 +132,16 @@
     transition: 0.5s;
   }
 
-  .ghaly-effect:hover {
+  .ghaly-effect {
     color: #fff;
     text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
       0 0 100px #03e9f4;
+  }
+
+  .clear-ghaly-effect {
+    cursor: pointer;
+    transition: 0.5s;
+    text-shadow: 0;
   }
 
   .paragraph-overflow {
