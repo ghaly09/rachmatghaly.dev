@@ -14,6 +14,13 @@ export default function Navbar() {
     pageName: router.pathname,
   });
 
+  React.useEffect(() => {
+    setActive({
+      ...active,
+      pageName: router.pathname,
+    });
+  }, [router.pathname]);
+
   // console.log(router.pathname);
 
   return (
@@ -25,12 +32,6 @@ export default function Navbar() {
             href={link.href}
             page={link.page}
             style={link.href != active.pageName ? "" : active.style}
-            onclick={() => {
-              setActive({
-                ...active,
-                pageName: link.href,
-              });
-            }}
           />
         ))}
       </div>
