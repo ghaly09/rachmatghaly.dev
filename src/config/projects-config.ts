@@ -34,7 +34,7 @@ export const projectsConfig: projectTypes = {
     {
       title: "StayDoors Mobile",
       imgSrc:
-        "https://res.cloudinary.com/druckyjuu/image/upload/v1690060543/Projects/Jajan.id_agg7wv.svg",
+        "https://res.cloudinary.com/druckyjuu/image/upload/v1690088046/Projects/StayDoors_svutpf.svg",
       description:
         "A Hotels Reservation App using React Native for finding and booking many Hotels and Destinations.",
       technologies: [
