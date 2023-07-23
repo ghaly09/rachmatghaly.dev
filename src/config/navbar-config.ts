@@ -6,7 +6,6 @@ export type navType = Array<{
 export interface navProps {
   href: string;
   page: string;
-  onclick: any;
   style: string;
 }
 
