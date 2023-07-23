@@ -3,6 +3,7 @@ import { SlideReveal } from "../../ui/FramerMotion/slideReveal";
 import { Button } from "../../ui/button";
 import StatusAndResume from "../Buttons/Button-ResumeStatus";
 import { Reveal } from "../../ui/FramerMotion/onReveal";
+import Link from "next/link";
 
 export default function HomeDesc() {
   const [ghalyEffect, setGhalyEffect] = React.useState("");
@@ -48,7 +49,7 @@ export default function HomeDesc() {
             className="bg-[#0e1111] border-[1px] border-slate-600 text-[15px] font-ghaly rounded-sm"
             variant={"outline"}
           >
-            More about me
+            <Link href={"/about"}>More about me</Link>
           </Button>
         </Reveal>
 
