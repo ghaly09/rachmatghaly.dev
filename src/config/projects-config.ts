@@ -1,21 +1,19 @@
-import * as React from "react";
+import { AiFillVideoCamera } from "react-icons/Ai";
+import { IoLogoYoutube } from "react-icons/Io";
 import {
-  SiReactquery,
-  SiTailwindcss,
-  SiNextdotjs,
-  SiRedux,
-  SiVercel,
-  SiJavascript,
   SiAdobeillustrator,
   SiAdobephotoshop,
   SiAdobepremierepro,
+  SiJavascript,
+  SiNextdotjs,
+  SiReactquery,
+  SiRedux,
+  SiTailwindcss,
+  SiVercel,
 } from "react-icons/Si";
-import { FaReact } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/Io";
 import { TbBrandReactNative } from "react-icons/Tb";
+import { FaReact } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
-import { IoLogoYoutube } from "react-icons/Io";
-import { AiFillVideoCamera } from "react-icons/Ai";
 import { IconType } from "react-icons/lib";
 
 export interface projectTypes {
