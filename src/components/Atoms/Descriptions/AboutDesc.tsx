@@ -7,15 +7,15 @@ export default function AboutDesc() {
         id="text"
         className="font-ghaly text-base pb-3 text-gray-600 dark:text-[#d3d4d6] "
       >
-        Hello, I'm Ghaly. I am a physics graduate enthusiastic about research,
-        teaching, programming, and design activities to build visually
+        Hello, I&apos;m Ghaly. I am a physics graduate enthusiastic about
+        research, teaching, programming, and design activities to build visually
         attractive applications with user-friendly interactions.{" "}
       </p>
       <p className="font-ghaly text-base pb-4 text-gray-600 dark:text-[#d3d4d6] ">
-        I started learning web development in May 2021, I've been fascinated by
-        how software works and how it can be used to solve complex problems and
-        make a positive impact on people's lives. So, I decided to make software
-        engineering to be my professional field.
+        I started learning web development in May 2021, I&apos;ve been
+        fascinated by how software works and how it can be used to solve complex
+        problems and make a positive impact on people&apos;s lives. So, I
+        decided to make software engineering to be my professional field.
         <br />
         Initially, I had no prior experience in web development, but I was
         determined to learn and hone my skills. To achieve this, I turned to
