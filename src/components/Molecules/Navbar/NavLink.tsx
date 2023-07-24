@@ -7,7 +7,7 @@ export default function NavLink({ href, page, style }: navProps) {
   return (
     <Link
       className={cn(
-        "hover:text-transparent hover:bg-clip-text hover:bg-[rgb(61,224,102)]",
+        "hover:text-transparent hover:bg-clip-text hover:bg-teal-300",
         style
       )}
       href={href}
