@@ -64,7 +64,7 @@ export const SlideReveal = ({
           bottom: 4,
           left: 0,
           right: 0,
-          background: "rgb(61,224,102)",
+          background: "rgb(0,233,221)",
           zIndex: 20,
         }}
       />
