@@ -21,7 +21,7 @@ export default function HomeDesc() {
   }, [ghalyEffect]);
 
   return (
-    <div className="mt-32">
+    <div className="my-32 px-5 lg:px-0">
       <SlideReveal delay={0.2} duration={0.5}>
         <h2 className="text-2xl md:text-5xl text-[#0e1111] dark:text-white font-bold">
           Hi!
@@ -48,7 +48,7 @@ export default function HomeDesc() {
       <div className="flex flex-row gap-5 mt-5">
         <Reveal delay={0.5} duration={0.5}>
           <Button
-            className="dark:bg-[#0e1111] border-[1px] border-slate-600 text-[15px] font-ghaly font-semibold rounded-sm cursor-pointer dark:hover:bg-gray-800 hover:duration-300"
+            className="dark:bg-[#0e1111] border-[1px] border-slate-600 text-sm sm:text-[15px] font-ghaly font-semibold rounded-sm cursor-pointer dark:hover:bg-gray-800 hover:duration-300"
             variant={"outline"}
           >
             <Link href={"/about"}>More about me</Link>
