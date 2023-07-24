@@ -16,7 +16,7 @@ export default function ComingSoon() {
         />
       </Reveal>
       <Reveal delay={0.4} duration={0.5}>
-        <p className="text-2xl font-bold dark:color-base-ghaly mt-2">
+        <p className="text-2xl font-bold text-white dark:text-transparent dark:bg-clip-text dark:color-ghaly color-ghaly mt-2">
           Coming Soon!
         </p>
       </Reveal>
