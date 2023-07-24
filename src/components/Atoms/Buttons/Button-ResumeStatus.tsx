@@ -1,9 +1,7 @@
-import React from "react";
-import { BsFillFileEarmarkTextFill } from "react-icons/bs";
-import { BiLinkExternal } from "react-icons/bi";
-import Link from "next/link";
-import { motion, useReducedMotion } from "framer-motion";
 import clsx from "clsx";
+import { motion, useReducedMotion } from "framer-motion";
+import Link from "next/link";
+import { BiLinkExternal } from "react-icons/bi";
 
 export default function StatusAndResume() {
   const shouldReduceMotion = useReducedMotion();
@@ -76,7 +74,6 @@ export default function StatusAndResume() {
               "absolute top-0 left-0 flex flex-row items-center cursor-pointer text-sm md:text-[15px] text-gray-600 dark:text-slate-300 dark:hover:text-white hover:text-[rgb(27,197,191)]"
             )}
           >
-            {/* <BsFillFileEarmarkTextFill className="mr-2 h-[18px] w-[18px]" />{" "} */}
             <BiLinkExternal className="mr-2 h-[18px] w-[18px]" /> MORE ABOUT ME
           </motion.div>
         </Link>

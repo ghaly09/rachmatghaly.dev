@@ -53,7 +53,6 @@ export default function HomeDesc() {
             className="dark:bg-[#0e1111] border-[1px] border-slate-600 text-sm sm:text-[15px] font-ghaly font-semibold rounded-sm cursor-pointer dark:hover:bg-gray-800 hover:duration-300"
             variant={"outline"}
           >
-            {/* <Link href={"/about"}>More about me</Link> */}
             <Link
               href={"https://www.linkedin.com/in/rachmat-ghaly/"}
               target="_blank"
