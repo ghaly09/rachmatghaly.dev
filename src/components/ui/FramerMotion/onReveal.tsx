@@ -25,7 +25,7 @@ export const Reveal = ({
     if (isInView) {
       mainControls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView, mainControls]);
 
   return (
     <div
