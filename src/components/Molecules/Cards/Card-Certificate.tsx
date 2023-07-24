@@ -40,7 +40,7 @@ export default function CardCertificate({
       </Reveal>
       <CardContent>
         <Reveal delay={0.1} duration={0.8}>
-          <Link href={directLink} target="_blank" rel="noreferrer">
+          <Link href={directLink} target="_blank" rel="noreferrer" passHref>
             <div
               className="relative h-[120px] w-[220px] rounded-sm hover:bg-black hover:duration-300"
               onMouseOver={() => {
