@@ -75,7 +75,7 @@ export const aboutConfig: dataAbout = {
             "+ 5",
           ],
           imgLink:
-            "https://drive.google.com/uc?id=1VficMaOPoLd41POGpoM_M-_GkwRfINEL",
+            "https://res.cloudinary.com/druckyjuu/image/upload/v1690187482/Projects/Hacktiv8-logo_arog7z.png",
           directLink: "",
         },
         {
@@ -103,7 +103,7 @@ export const aboutConfig: dataAbout = {
             "+ 3",
           ],
           imgLink:
-            "https://drive.google.com/uc?id=1aahWDkurUey8wdw_5TkF35CmhtoeBsw4",
+            "https://res.cloudinary.com/druckyjuu/image/upload/v1690187514/Projects/Ruangguru_v5ddvo.png",
           directLink: "h",
         },
         {
@@ -125,7 +125,7 @@ export const aboutConfig: dataAbout = {
             "+ 20",
           ],
           imgLink:
-            "https://drive.google.com/uc?id=1yyh-Rg_lKLq7__CZQfcZfZn8A4cJuL4H",
+            "https://res.cloudinary.com/druckyjuu/image/upload/v1690187551/Projects/IPB_dg5ioj.png",
           directLink: "",
         },
         {
@@ -141,7 +141,7 @@ export const aboutConfig: dataAbout = {
             "+ 10",
           ],
           imgLink:
-            "https://drive.google.com/uc?id=1yyh-Rg_lKLq7__CZQfcZfZn8A4cJuL4H",
+            "https://res.cloudinary.com/druckyjuu/image/upload/v1690187551/Projects/IPB_dg5ioj.png",
           directLink: "",
         },
       ],
@@ -154,7 +154,7 @@ export const aboutConfig: dataAbout = {
           title: "Hacktiv8 Indonesia",
           description: "Frontend Developer",
           imgLink:
-            "https://drive.google.com/uc?id=18pjcyKH2OjosTiyjhUbqX17jQdwd6dFF",
+            "https://res.cloudinary.com/druckyjuu/image/upload/v1690187639/Projects/RACHMAT_GHALY-certificate-Hacktiv8_page-0001_swsgg8.jpg",
           directLink:
             "https://drive.google.com/file/d/1jhvqxVFyvEVotf4ohFulu9prQPhO1sUO/view?usp=sharing",
         },
@@ -162,7 +162,7 @@ export const aboutConfig: dataAbout = {
           title: "Ruangguru Camp",
           description: "Frontend Engineer",
           imgLink:
-            "https://drive.google.com/uc?id=1R3ssH80QcIwOOmBLw32C_MMc8le0TZcj",
+            "https://res.cloudinary.com/druckyjuu/image/upload/v1690187732/Projects/Certificate_Rachmat_Ghaly-Ruangguru-MSIB_fpfps5.jpg",
           directLink:
             "https://drive.google.com/file/d/1BdtgKXAjjCTlTRyfqzzZ6sgrNLzjgIi1/view?usp=sharing",
         },
@@ -202,7 +202,7 @@ export const aboutConfig: dataAbout = {
           title: "Global AI Bootcamp 2018",
           description: "Dicoding",
           imgLink:
-            "https://drive.google.com/uc?id=1al9_5R89bruLqNOEJcJwTnYUZq-c8MdP",
+            "https://res.cloudinary.com/druckyjuu/image/upload/v1690187790/Projects/Rachmat_Ghaly-Global-AI-Bootcamp-certificate_page-0001_dwi6hg.jpg",
           directLink:
             "https://drive.google.com/file/d/1SmYQXvZl64zK1LH-TJksHcoCW4rAiNAJ/view?usp=sharing",
         },
