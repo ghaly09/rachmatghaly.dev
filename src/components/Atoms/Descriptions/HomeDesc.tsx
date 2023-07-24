@@ -33,7 +33,7 @@ export default function HomeDesc() {
         <h2 className="text-3xl md:text-6xl text-[#0e1111] dark:text-white font-bold">
           I&apos;m Rachmat
           <span
-            className={`font-ghaly ${ghalyEffect} px-2 text-transparent focus:text-transparent bg-clip-text bg-gradient-to-r from-[rgb(0,218,210)] to-[rgb(61,224,102)]`}
+            className={`font-ghaly ${ghalyEffect} px-2 text-transparent focus:text-transparent bg-clip-text color-ghaly`}
           >
             Ghaly
           </span>
