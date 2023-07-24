@@ -1,5 +1,5 @@
-import { AiFillVideoCamera } from "react-icons/Ai";
-import { IoLogoYoutube } from "react-icons/Io";
+import { AiFillVideoCamera } from "react-icons/ai";
+import { IoLogoYoutube } from "react-icons/io";
 import {
   SiAdobeillustrator,
   SiAdobephotoshop,
@@ -10,8 +10,8 @@ import {
   SiRedux,
   SiTailwindcss,
   SiVercel,
-} from "react-icons/Si";
-import { TbBrandReactNative } from "react-icons/Tb";
+} from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
 import { IconType } from "react-icons/lib";
