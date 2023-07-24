@@ -1,5 +1,6 @@
 import React from "react";
 import { BsFillFileEarmarkTextFill } from "react-icons/bs";
+import { BiLinkExternal } from "react-icons/bi";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import clsx from "clsx";
@@ -43,41 +44,43 @@ export default function StatusAndResume() {
   }
 
   return (
-    <Link
-      href={"https://www.linkedin.com/in/rachmat-ghaly/"}
-      target="_blank"
-      className="flex flex-row items-center font-ghaly font-semibold cursor-pointer text-sm md:text-[15px] text-gray-600 hover:text-[rgb(27,197,191)] dark:text-slate-300 dark:hover:text-white"
-      passHref
+    <motion.div
+      className={clsx(
+        "flex flex-row gap-2 items-center font-ghaly font-semibold"
+      )}
+      initial="hide"
+      animate="show"
     >
-      <motion.div className={clsx("flex gap-2")} initial="hide" animate="show">
+      <motion.div
+        variants={animation}
+        transition={{ delay: 1.2 }}
+        className={clsx("relative z-10")}
+      >
         <motion.div
-          variants={animation}
-          transition={{ delay: 1.2 }}
-          className={clsx("relative z-10")}
+          variants={isFreeVariants}
+          transition={{ delay: 3 + 1.5, duration: 0.4 }}
+          className="flex flex-row items-center text-sm md:text-[15px] text-gray-600 dark:text-slate-300 dark:hover:text-white"
         >
-          <motion.div
-            variants={isFreeVariants}
-            transition={{ delay: 3 + 1.5, duration: 0.4 }}
-            className="flex flex-row items-center"
-          >
-            <span className="relative flex h-4 w-4 mr-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 dark:bg-white opacity-75"></span>
-              <span className="relative inline-flex top-1 left-1 rounded-full h-2 w-2 bg-[rgb(0,218,210)]"></span>
-            </span>
-            AVAILABLE FOR HIRE
-          </motion.div>
-
+          <span className="relative flex h-4 w-4 mr-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 dark:bg-white opacity-75"></span>
+            <span className="relative inline-flex top-1 left-1 rounded-full h-2 w-2 bg-[rgb(0,218,210)]"></span>
+          </span>
+          AVAILABLE FOR HIRE
+        </motion.div>
+        <Link href={"/about"} passHref>
           <motion.div
             initial={{ x: -48, opacity: 0, pointerEvents: "none" }}
             animate={{ x: 0, opacity: 1, pointerEvents: "auto" }}
             transition={{ delay: 3 + 1.6, duration: 0.4 }}
-            className={clsx("absolute top-0 left-0 flex flex-row items-center")}
+            className={clsx(
+              "absolute top-0 left-0 flex flex-row items-center cursor-pointer text-sm md:text-[15px] text-gray-600 dark:text-slate-300 dark:hover:text-white hover:text-[rgb(27,197,191)]"
+            )}
           >
-            <BsFillFileEarmarkTextFill className="mr-2 h-[18px] w-[18px]" />{" "}
-            RESUME
+            {/* <BsFillFileEarmarkTextFill className="mr-2 h-[18px] w-[18px]" />{" "} */}
+            <BiLinkExternal className="mr-2 h-[18px] w-[18px]" /> MORE ABOUT ME
           </motion.div>
-        </motion.div>
+        </Link>
       </motion.div>
-    </Link>
+    </motion.div>
   );
 }
