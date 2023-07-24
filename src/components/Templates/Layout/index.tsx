@@ -27,7 +27,7 @@ const Layout = (props: LayoutProps) => {
         crossOrigin="anonymous"
       />
 
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
         <main>
           <Header />
           <div className="max-w-[68rem] mx-auto">
