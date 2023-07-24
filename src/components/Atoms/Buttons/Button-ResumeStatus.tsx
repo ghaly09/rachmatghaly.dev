@@ -1,5 +1,5 @@
 import React from "react";
-import { BsFillFileEarmarkTextFill } from "react-icons/Bs";
+import { BsFillFileEarmarkTextFill } from "react-icons/bs";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import clsx from "clsx";
@@ -47,6 +47,7 @@ export default function StatusAndResume() {
       href={"https://www.linkedin.com/in/rachmat-ghaly/"}
       target="_blank"
       className="flex flex-row items-center font-ghaly font-semibold cursor-pointer text-gray-600 hover:text-[rgb(27,197,191)] dark:text-slate-300 dark:hover:text-white"
+      passHref
     >
       <motion.div className={clsx("flex gap-2")} initial="hide" animate="show">
         <motion.div
