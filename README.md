@@ -4,6 +4,8 @@
 
 ## 🖥️ Preview
 
+[https://www.rachmatghaly.com](https://rachmatghaly.vercel.app/)
+
 ## 🛠️ Tech Stack & Tools
 
 The table below gives an overview of the technologies used in this project, as well as places to learn more about them.
