@@ -14,6 +14,7 @@ export default function SeeMore({ directLink, lineEffect }: prop) {
         rel="noreferrer noopener"
         href={directLink}
         className="text-gray-600 dark:text-white text-sm font-semibold hover-underline-animation"
+        passHref
       >
         See More{" "}
         <span>
