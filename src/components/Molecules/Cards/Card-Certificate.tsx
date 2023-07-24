@@ -33,7 +33,7 @@ export default function CardCertificate({
       <Reveal delay={0.05} duration={0.8}>
         <CardHeader>
           <CardTitle>{title}</CardTitle>
-          <CardDescription className="w-auto font-semibold bg-gradient-to-r from-[rgb(146,245,242)] dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[rgb(0,218,210)] dark:to-[rgb(61,224,102)]">
+          <CardDescription className="w-auto font-semibold bg-gradient-to-r from-[rgb(146,245,242)] dark:text-transparent dark:bg-clip-text dark:color-base-ghaly">
             {description}
           </CardDescription>
         </CardHeader>
