@@ -19,6 +19,7 @@ export default function Navbar() {
       ...active,
       pageName: router.pathname,
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router.pathname]);
 
   // console.log(router.pathname);
