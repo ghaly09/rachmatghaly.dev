@@ -31,7 +31,7 @@ export default function CardEducation({
       <Reveal delay={0.05} duration={0.8}>
         <CardHeader className="py-5 pr-3">
           <CardTitle>{title}</CardTitle>
-          <CardDescription className="w-auto font-semibold bg-gradient-to-r from-[rgb(146,245,242)] dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[rgb(0,218,210)] dark:to-[rgb(61,224,102)]">
+          <CardDescription className="w-auto font-semibold bg-gradient-to-r from-[rgb(146,245,242)] dark:text-transparent dark:bg-clip-text dark:color-base-ghaly">
             {major}
           </CardDescription>
           <div className="flex flex-row flex-wrap gap-1">
