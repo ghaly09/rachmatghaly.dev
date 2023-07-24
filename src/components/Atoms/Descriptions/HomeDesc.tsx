@@ -4,6 +4,8 @@ import { Button } from "../../ui/button";
 import StatusAndResume from "../Buttons/Button-ResumeStatus";
 import { Reveal } from "../../ui/FramerMotion/onReveal";
 import Link from "next/link";
+import { BsFillFileEarmarkTextFill } from "react-icons/bs";
+import clsx from "clsx";
 
 export default function HomeDesc() {
   const [ghalyEffect, setGhalyEffect] = React.useState("");
@@ -51,7 +53,16 @@ export default function HomeDesc() {
             className="dark:bg-[#0e1111] border-[1px] border-slate-600 text-sm sm:text-[15px] font-ghaly font-semibold rounded-sm cursor-pointer dark:hover:bg-gray-800 hover:duration-300"
             variant={"outline"}
           >
-            <Link href={"/about"}>More about me</Link>
+            {/* <Link href={"/about"}>More about me</Link> */}
+            <Link
+              href={"https://www.linkedin.com/in/rachmat-ghaly/"}
+              target="_blank"
+              className={clsx("flex flex-row items-center")}
+              passHref
+            >
+              <BsFillFileEarmarkTextFill className="mr-2 h-[18px] w-[18px]" />{" "}
+              Resume
+            </Link>
           </Button>
         </Reveal>
 
