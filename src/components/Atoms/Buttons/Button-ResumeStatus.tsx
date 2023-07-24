@@ -57,11 +57,11 @@ export default function StatusAndResume() {
         <motion.div
           variants={isFreeVariants}
           transition={{ delay: 3 + 1.5, duration: 0.4 }}
-          className="flex flex-row items-center text-sm md:text-[15px] text-gray-600 dark:text-slate-300 dark:hover:text-white"
+          className="flex flex-row items-center text-sm md:text-[15px] text-gray-600 dark:text-teal-300 dark:hover:text-white"
         >
           <span className="relative flex h-4 w-4 mr-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 dark:bg-white opacity-75"></span>
-            <span className="relative inline-flex top-1 left-1 rounded-full h-2 w-2 bg-[rgb(0,218,210)]"></span>
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 dark:bg-white opacity-75"></span>
+            <span className="relative inline-flex top-1 left-1 rounded-full h-2 w-2 bg-violet-600 dark:bg-teal-300"></span>
           </span>
           AVAILABLE FOR HIRE
         </motion.div>
