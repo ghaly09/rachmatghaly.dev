@@ -6,8 +6,7 @@ import { useRouter } from "next/router";
 
 export default function Navbar() {
   const router = useRouter();
-  const styleActive =
-    "text-transparent bg-clip-text bg-gradient-to-r from-[rgb(0,218,210)] to-[rgb(61,224,102)]";
+  const styleActive = "text-transparent bg-clip-text color-secondary-ghaly";
 
   const [active, setActive] = React.useState({
     style: styleActive,
