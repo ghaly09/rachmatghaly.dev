@@ -3,9 +3,11 @@ import HomeDesc from "../components/Atoms/Descriptions/HomeDesc";
 
 const Index: NextPage = () => {
   return (
-    <section>
-      {/* Title */}
+    <section className="relative">
+      {/* Header Title */}
       <HomeDesc />
+
+      {/* Background oval vector */}
     </section>
   );
 };
