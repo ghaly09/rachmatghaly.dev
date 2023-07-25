@@ -156,7 +156,7 @@ export const aboutConfig: dataAbout = {
           imgLink:
             "https://res.cloudinary.com/druckyjuu/image/upload/v1690187639/Projects/RACHMAT_GHALY-certificate-Hacktiv8_page-0001_swsgg8.jpg",
           directLink:
-            "https://drive.google.com/file/d/1jhvqxVFyvEVotf4ohFulu9prQPhO1sUO/view?usp=sharing",
+            "https://drive.google.com/file/d/1UO1BoQYZl70Es7mw2kaGtLix4-zXQ_J_/view?usp=sharing",
         },
         {
           title: "Ruangguru Camp",
