@@ -1,6 +1,7 @@
-import * as React from "react";
 import Head from "next/head";
 import Script from "next/script";
+import * as React from "react";
+import VectorBackground from "../../Atoms/Photos/VectorBackground";
 import Footer from "../../Molecules/Footer";
 import Header from "../../Molecules/Header";
 import { ThemeProvider } from "../Theme/theme-provider";
@@ -30,6 +31,8 @@ const Layout = (props: LayoutProps) => {
       <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
         <main>
           <Header />
+          {/* Background oval vector */}
+          <VectorBackground />
           <div className="max-w-[68rem] mx-auto">
             <div>{children}</div>
             <Footer />
