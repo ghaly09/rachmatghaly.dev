@@ -10,18 +10,17 @@ import {
 interface propIcon {
   iconName: string;
   icon: string;
+  className: string;
 }
 
-export function IconTech({ icon, iconName }: propIcon) {
+export function IconTech({ icon, iconName, className }: propIcon) {
   //   console.log(iconName)
 
   return (
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>
-          <span className="bg-transparent px-[3px] text-[18px] text-gray-700 dark:text-white">
-            {React.createElement(eval(icon))}
-          </span>
+          <span className={className}>{React.createElement(eval(icon))}</span>
         </TooltipTrigger>
         <TooltipContent>
           <p>{iconName}</p>
