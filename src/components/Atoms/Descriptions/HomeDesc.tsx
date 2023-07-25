@@ -6,6 +6,8 @@ import { Reveal } from "../../ui/FramerMotion/onReveal";
 import Link from "next/link";
 import { BsFillFileEarmarkTextFill } from "react-icons/bs";
 import clsx from "clsx";
+import { homeConfig } from "@/src/config/home-config";
+import { IconTech } from "../Icons/IconTech";
 
 export default function HomeDesc() {
   const [ghalyEffect, setGhalyEffect] = React.useState("");
@@ -68,6 +70,32 @@ export default function HomeDesc() {
         {/* Work Status and Resume */}
         <StatusAndResume />
       </div>
+
+      {/* check it out */}
+      <Reveal delay={0.7} duration={0.5}>
+        <div className="flex gap-5 mt-8">
+          {homeConfig.iconsLink.map((data: any, index: number) => {
+            return (
+              <Link
+                href={data.directLink}
+                target="_blank"
+                key={index}
+                className={`flex flex-row gap-1 items-center text-[16px] cursor-pointer font-semibold text-gray-500 dark:text-slate-400 hover:text-gray-900 dark:hover:${data.color} duration-300`}
+                passHref
+              >
+                <IconTech
+                  icon={data.icon}
+                  iconName={data.iconName}
+                  className={"bg-transparent pr-[1px] text-[18px]"}
+                />
+                <p className="dark:hover:text-white duration-300">
+                  {data.title}
+                </p>
+              </Link>
+            );
+          })}
+        </div>
+      </Reveal>
     </div>
   );
 }
