@@ -45,7 +45,14 @@ export default function CardProject({
         {/* Icons Tech */}
         <div className="absolute top-1/2 right-3 flex flex-row rounded-t-[3px] py-[5px] px-1 bg-white dark:bg-[#0e1111] ">
           {technologies.map((tech: any, index: number) => (
-            <IconTech key={index} icon={tech.icon} iconName={tech.iconName} />
+            <IconTech
+              key={index}
+              icon={tech.icon}
+              iconName={tech.iconName}
+              className={
+                "bg-transparent px-[3px] text-[18px] text-gray-700 dark:text-white"
+              }
+            />
           ))}
         </div>{" "}
         <CardTitle>{title}</CardTitle>
