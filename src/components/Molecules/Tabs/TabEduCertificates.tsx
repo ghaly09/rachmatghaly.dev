@@ -24,7 +24,7 @@ export function TabEduCertificates({ educations, certificates }: Types) {
     <section className="flex flex-col items-center justify-center font-ghaly ">
       <Reveal delay={0.2} duration={0.5}>
         <Tabs defaultValue={active} className="w-[300px] sm:w-[350px]">
-          <TabsList className="grid w-full grid-cols-2 h-[50px] sm:h-[38px] bg-transparent text-gray-400 dark:text-gray-500">
+          <TabsList className="grid w-full grid-cols-2 h-[50px] sm:h-[38px] bg-transparent text-[#aeb8b7] dark:text-gray-500">
             <TabsTrigger
               className={`h-[40px] sm:h-[47px] text-xl lg:text-2xl font-bold data-[state=active]:bg-transparent data-[state=active]:dark:bg-[#0e111100]`}
               value="Educations"
@@ -44,13 +44,17 @@ export function TabEduCertificates({ educations, certificates }: Types) {
               }}
             >
               Certificates
+              <span className="relative flex h-5 w-5">
+                <span className="animate-ping absolute bottom-[0.6rem] left-[0.15rem] inline-flex h-3 w-3 rounded-full bg-teal-400 dark:bg-white opacity-75"></span>
+                <span className="relative inline-flex top-0 left-1 rounded-full h-2 w-2 bg-violet-600 dark:bg-teal-300"></span>
+              </span>
             </TabsTrigger>
           </TabsList>
         </Tabs>
       </Reveal>
       <Reveal delay={0.2} duration={0.5}>
         <div className="overflow-x-hidden max-w-[1500px] flex justify-center">
-          <div className="w-screen h-[18px] mx-auto bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[rgba(0,255,247,0.42)] dark:from-[rgb(0,218,210)] via-white to-white dark:via-[#0e111100] dark:to-[#0e111100] "></div>
+          <div className="w-screen h-[18px] mx-auto bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[rgba(0,255,247,0.42)] dark:from-[rgb(0,218,210)] via-[#0e111100] to-[#0e111100] dark:via-[#0e111100] dark:to-[#0e111100] "></div>
         </div>
       </Reveal>
 
