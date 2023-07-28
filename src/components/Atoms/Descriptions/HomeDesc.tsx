@@ -56,7 +56,7 @@ export default function HomeDesc() {
             variant={"outline"}
           >
             <Link
-              href={"https://www.linkedin.com/in/rachmat-ghaly/"}
+              href={homeConfig.resume}
               target="_blank"
               className={clsx("flex flex-row items-center")}
               passHref
