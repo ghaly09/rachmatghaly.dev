@@ -199,10 +199,42 @@ export const aboutConfig: dataAbout = {
             "https://sertiva.id/credential/4760ed46-0c1e-4fce-90fe-bd59426c7fa2",
         },
         {
+          title: "Software Engineering",
+          description: "Ruangguru",
+          imgLink:
+            "https://img.rk-certificate.com/RACHMATXKLR85UMC/CERT-NI26PKV3.jpg",
+          directLink:
+            "https://img.rk-certificate.com/RACHMATXKLR85UMC/CERT-NI26PKV3.jpg",
+        },
+        {
+          title: "Programming with JavaScript",
+          description: "Ruangguru",
+          imgLink:
+            "https://img.rk-certificate.com/RACHMATXKLR85UMC/CERT-GOVRVIA4.jpg",
+          directLink:
+            "https://img.rk-certificate.com/RACHMATXKLR85UMC/CERT-GOVRVIA4.jpg",
+        },
+        {
+          title: "Front-End Web Development With HTML & CSS",
+          description: "Ruangguru",
+          imgLink:
+            "https://img.rk-certificate.com/RACHMATXKLR85UMC/CERT-VCGWEH8B.jpg",
+          directLink:
+            "https://img.rk-certificate.com/RACHMATXKLR85UMC/CERT-VCGWEH8B.jpg",
+        },
+        {
           title: "Global AI Bootcamp 2018",
           description: "Dicoding",
           imgLink:
             "https://res.cloudinary.com/druckyjuu/image/upload/v1690187790/Projects/Rachmat_Ghaly-Global-AI-Bootcamp-certificate_page-0001_dwi6hg.jpg",
+          directLink:
+            "https://drive.google.com/file/d/1SmYQXvZl64zK1LH-TJksHcoCW4rAiNAJ/view?usp=sharing",
+        },
+        {
+          title: "___________________________",
+          description: "Click button below for see more",
+          imgLink:
+            "https://res.cloudinary.com/druckyjuu/image/upload/v1690600078/Projects/See-more_h0fw8i.svg",
           directLink:
             "https://drive.google.com/file/d/1SmYQXvZl64zK1LH-TJksHcoCW4rAiNAJ/view?usp=sharing",
         },
