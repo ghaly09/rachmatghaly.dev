@@ -20,7 +20,7 @@ export default function SkillsIcon() {
         ))}
       </span>
 
-      {aboutConfig.iconSkills?.slice(4, 8).map((icon, index) => (
+      {aboutConfig.iconSkills?.slice(4, 9).map((icon, index) => (
         <IconSkill
           key={index}
           style={icon?.style}
@@ -41,7 +41,7 @@ export default function SkillsIcon() {
           alt="verticalLine"
         />
       </div>
-      {aboutConfig.iconSkills?.slice(8, 10).map((icon, index) => (
+      {aboutConfig.iconSkills?.slice(9, 11).map((icon, index) => (
         <IconSkill
           key={index}
           style={icon?.style}
