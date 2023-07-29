@@ -23,7 +23,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           color={colorLoadingBar}
           startPosition={0.3}
           stopDelayMs={200}
-          height={2}
+          height={3}
           showOnShallow={true}
         />
         <Layout>
