@@ -236,7 +236,7 @@ export const aboutConfig: dataAbout = {
           imgLink:
             "https://res.cloudinary.com/druckyjuu/image/upload/v1690600078/Projects/See-more_h0fw8i.svg",
           directLink:
-            "https://drive.google.com/file/d/1SmYQXvZl64zK1LH-TJksHcoCW4rAiNAJ/view?usp=sharing",
+            "https://drive.google.com/drive/folders/1fYkBwt5mWVrWSvi8DP-unBbv9cqSaJWM?usp=sharing",
         },
       ],
     },
