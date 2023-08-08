@@ -15,7 +15,7 @@ export interface homeTypes {
 
 export const homeConfig: homeTypes = {
   resume:
-    "https://drive.google.com/file/d/1N4Fhy4p4Zmfj_JWvJwWHADFItOB6e8II/view?usp=sharing",
+    "https://drive.google.com/file/d/1kur2J1g6nO0T2vtXbSsOiqCq0xTZBHqj/view?usp=sharing",
 
   iconsLink: [
     {
