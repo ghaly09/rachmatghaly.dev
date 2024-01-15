@@ -10,6 +10,7 @@ import {
   SiRedux,
   SiTailwindcss,
   SiVercel,
+  SiFramer,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
@@ -42,6 +43,23 @@ export const projectsConfig: projectTypes = {
       date: "July 13, 2021",
       directLink:
         "https://github.com/FinalProject03-Kel04-Hacktiv8/Kel04-FP03-Hacktiv8-Hotel-Reservation-MobileApp",
+    },
+    {
+      title: "Geex",
+      imgSrc:
+        "https://res.cloudinary.com/druckyjuu/image/upload/v1705319418/thumbnails/Geex_lnfe5o.svg",
+      description:
+        "An E-commerce Web Application as a place to buy and sell various items and products specifically for games and gamers.",
+      technologies: [
+        { icon: SiNextdotjs, iconName: "Next.js" },
+        { icon: SiReactquery, iconName: "React Query" },
+        { icon: SiRedux, iconName: "Redux" },
+        { icon: SiTailwindcss, iconName: "Tailwindcss" },
+        { icon: SiFramer, iconName: "Framer Motions" },
+        { icon: SiVercel, iconName: "Vercel" },
+      ],
+      date: "July 13, 2021",
+      directLink: "https://geex-frontend.vercel.app",
     },
     {
       title: "Jajan.id",
