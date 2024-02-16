@@ -47,7 +47,7 @@
   "devDependencies": {
     "@tanstack/react-query": "^4.33.0",
     "@tanstack/react-query-devtools": "^4.33.0",
-    "autoprefixer": "^10.4.15",
+    "autoprefixer": "^10.4.17",
     "babel-eslint": "^10.1.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-next": "^0.0.0",
