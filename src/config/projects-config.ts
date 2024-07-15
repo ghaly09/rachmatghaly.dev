@@ -15,6 +15,7 @@ import {
 import { TbBrandReactNative } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
+import { GiBearFace } from "react-icons/gi";
 import { IconType } from "react-icons/lib";
 
 export interface projectTypes {
@@ -43,6 +44,23 @@ export const projectsConfig: projectTypes = {
       date: "July 13, 2021",
       directLink:
         "https://github.com/FinalProject03-Kel04-Hacktiv8/Kel04-FP03-Hacktiv8-Hotel-Reservation-MobileApp",
+    },
+    {
+      title: "SWVindicate",
+      imgSrc:
+        "https://res.cloudinary.com/druckyjuu/image/upload/v1721054222/Projects/SWVindicate_owljyc.svg",
+      description:
+        "A Summoners War Finance Monitoring System Game Web App for monitoring and managing your finances, helping you track expenses, set budgets, and optimize your sales of products specifically for Summoners War Game.",
+      technologies: [
+        { icon: SiNextdotjs, iconName: "Next.js" },
+        { icon: SiReactquery, iconName: "React Query" },
+        { icon: GiBearFace, iconName: "Zustand" },
+        { icon: SiTailwindcss, iconName: "Tailwindcss" },
+        { icon: SiFramer, iconName: "Framer Motions" },
+        { icon: SiVercel, iconName: "Vercel" },
+      ],
+      date: "April 04, 2024",
+      directLink: "https://swvindicate-frontend.vercel.app",
     },
     {
       title: "Geex",
