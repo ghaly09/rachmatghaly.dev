@@ -186,17 +186,19 @@ export const aboutConfig: dataAbout = {
           title: "React.js and React Native Styling Components",
           description: "Hacktiv8 Indonesia",
           imgLink:
-            "https://d2qv16rycic4zo.cloudfront.net/images/cd7dda4d-5ebd-4c9d-a8fa-84c7222154e5_medium.png",
+            "https://res.cloudinary.com/druckyjuu/image/upload/v1721060697/Projects/Rachmat_Ghaly-React_ReactNative-Styling_oicbxk.jpg",
           directLink:
-            "https://sertiva.id/credential/cd7dda4d-5ebd-4c9d-a8fa-84c7222154e5",
+            "https://drive.google.com/file/d/1XymhuOfjCN4Tsh4JiBTvVV2Ba2ESjqHM/view?usp=sharing",
+          // "https://sertiva.id/credential/cd7dda4d-5ebd-4c9d-a8fa-84c7222154e5",
         },
         {
           title: "ECMAScript 2015 (ES6)",
           description: "Hacktiv8 Indonesia",
           imgLink:
-            "https://d2qv16rycic4zo.cloudfront.net/images/4760ed46-0c1e-4fce-90fe-bd59426c7fa2_medium.png",
+            "https://res.cloudinary.com/druckyjuu/image/upload/v1721060696/Projects/Rachmat_Ghaly-ES6-signed-4760ed46-0c1e-4fce-90fe-bd59426c7fa2_qx7iwy.jpg",
           directLink:
-            "https://sertiva.id/credential/4760ed46-0c1e-4fce-90fe-bd59426c7fa2",
+            "https://drive.google.com/file/d/1fListZnTfi1p5OQk4KXbAgjVBklGf5XJ/view?usp=sharing",
+          // "https://sertiva.id/credential/4760ed46-0c1e-4fce-90fe-bd59426c7fa2",
         },
         {
           title: "Software Engineering",
