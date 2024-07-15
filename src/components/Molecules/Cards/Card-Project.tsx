@@ -45,7 +45,7 @@ export default function CardProject({
     >
       <CardHeader className="p-4">
         {/* Icons Tech */}
-        <div className="absolute top-1/2 right-3 z-50 flex flex-row rounded-t-[3px] py-[5px] px-1 bg-white dark:bg-[#0e1111] ">
+        <div className="absolute top-1/2 right-3 z-40 flex flex-row rounded-t-[3px] py-[5px] px-1 bg-white dark:bg-[#0e1111] ">
           {technologies.map((tech: any, index: number) => (
             <IconTech
               key={index}
