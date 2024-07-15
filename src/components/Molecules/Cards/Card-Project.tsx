@@ -11,6 +11,7 @@ import Link from "next/link";
 import * as React from "react";
 import SeeMore from "../../Atoms/Buttons/Button-SeeMore";
 import { IconTech } from "../../Atoms/Icons/IconTech";
+import { Skeleton } from "../../ui/skeleton";
 
 export default function CardProject({
   title,
@@ -21,6 +22,7 @@ export default function CardProject({
   directLink,
 }: PropProjectTypes): React.JSX.Element {
   const [lineHover, setLineHover] = React.useState("");
+  const [imageLoaded, setImageLoaded] = React.useState(false);
 
   const handleLinkClick = (url: string) => {
     const link = document.createElement("a");
@@ -43,7 +45,7 @@ export default function CardProject({
     >
       <CardHeader className="p-4">
         {/* Icons Tech */}
-        <div className="absolute top-1/2 right-3 flex flex-row rounded-t-[3px] py-[5px] px-1 bg-white dark:bg-[#0e1111] ">
+        <div className="absolute top-1/2 right-3 z-50 flex flex-row rounded-t-[3px] py-[5px] px-1 bg-white dark:bg-[#0e1111] ">
           {technologies.map((tech: any, index: number) => (
             <IconTech
               key={index}
@@ -62,6 +64,10 @@ export default function CardProject({
         <SeeMore directLink={directLink} lineEffect={lineHover} />
       </CardHeader>
       <CardContent className="p-0">
+        {!imageLoaded && (
+          <Skeleton className="absolute top-0 z-30 w-full h-[180px] sm:w-[350px] sm:h-[180px] rounded-t-sm cursor-pointer" />
+        )}
+
         <div className="w-fit">
           <Image
             className={`object-cover w-screen max-h-[180px] sm:w-[350px] sm:max-h-[180px] rounded-t-sm cursor-pointer`}
@@ -69,6 +75,7 @@ export default function CardProject({
             width={350}
             height={300}
             alt={title}
+            onLoad={() => setImageLoaded(true)}
           />
         </div>
       </CardContent>
