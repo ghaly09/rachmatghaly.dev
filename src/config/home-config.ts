@@ -20,9 +20,9 @@ export const homeConfig: homeTypes = {
   iconsLink: [
     {
       icon: FiFigma,
-      iconName: "FIgma",
+      iconName: "Figma",
       title: "@ghalyprojects",
-      color: "text-orange-600",
+      color: "text-orange-500",
       directLink: "https://www.figma.com/@ghalyprojects",
     },
     {
