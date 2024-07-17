@@ -7,7 +7,7 @@ interface propType {
 
 export function BadgeSkills({ skill }: propType) {
   return (
-    <Badge variant="secondary" className="text-[10px]">
+    <Badge variant="secondary" className="text-[10px] cursor-default">
       {skill}
     </Badge>
   );
