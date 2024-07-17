@@ -122,7 +122,7 @@ export const aboutConfig: dataAbout = {
             "Electricity",
             "Particle physics",
             "Fluid mechanics",
-            "+ 20",
+            "+ 10",
           ],
           imgLink:
             "https://res.cloudinary.com/druckyjuu/image/upload/v1690187551/Projects/IPB_dg5ioj.png",
@@ -138,7 +138,6 @@ export const aboutConfig: dataAbout = {
             "Software Engineering",
             "Human and Computer Interaction",
             "Information System",
-            "+ 10",
           ],
           imgLink:
             "https://res.cloudinary.com/druckyjuu/image/upload/v1690187551/Projects/IPB_dg5ioj.png",
