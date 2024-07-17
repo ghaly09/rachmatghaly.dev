@@ -57,7 +57,7 @@ export default function StatusAndResume() {
         <motion.div
           variants={isFreeVariants}
           transition={{ delay: 3 + 1.5, duration: 0.4 }}
-          className="flex flex-row items-center text-sm md:text-[15px] text-gray-600 dark:text-teal-300 dark:hover:text-white"
+          className="flex flex-row items-center text-sm md:text-[15px] text-gray-600 dark:text-teal-300 cursor-default"
         >
           <span className="relative flex h-4 w-4 mr-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 dark:bg-white opacity-75"></span>
