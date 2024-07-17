@@ -11,6 +11,10 @@ import { IconTech } from "../Icons/IconTech";
 
 export default function HomeDesc() {
   const [ghalyEffect, setGhalyEffect] = React.useState("");
+  const [hoverSocialMedia, setHoverSocialMedia] = React.useState<any>({
+    Figma: "",
+    GitHub: "",
+  });
 
   React.useEffect(() => {
     if (ghalyEffect == "ghaly-effect") {
@@ -52,7 +56,7 @@ export default function HomeDesc() {
       <div className="flex flex-row gap-5 mt-5">
         <Reveal delay={0.5} duration={0.5}>
           <Button
-            className="dark:bg-[#0e1111] border-[1px] border-slate-600 text-sm sm:text-[15px] font-ghaly font-semibold rounded-sm cursor-pointer dark:hover:bg-gray-800 hover:duration-300"
+            className="relative z-30 dark:bg-[#0e1111] border-[1px] border-slate-600 text-sm sm:text-[15px] font-ghaly font-semibold rounded-sm cursor-pointer dark:hover:bg-gray-800 hover:duration-300"
             variant={"outline"}
           >
             <Link
@@ -80,15 +84,21 @@ export default function HomeDesc() {
                 href={data.directLink}
                 target="_blank"
                 key={index}
-                className={`flex flex-row gap-1 items-center text-[16px] cursor-pointer font-semibold text-gray-500 dark:text-slate-400 hover:text-gray-900 dark:hover:${data.color} duration-300`}
+                className={`flex flex-row gap-1 items-center text-[16px] cursor-pointer font-semibold text-gray-500 dark:text-slate-400 hover:text-gray-900`}
+                onMouseOver={() =>
+                  setHoverSocialMedia({ [data.iconName]: data.color })
+                }
+                onMouseOut={() => setHoverSocialMedia({ [data.iconName]: "" })}
                 passHref
               >
                 <IconTech
                   icon={data.icon}
                   iconName={data.iconName}
-                  className={"bg-transparent pr-[1px] text-[18px]"}
+                  className={`bg-transparent pr-[1px] text-[18px] duration-500 ${
+                    hoverSocialMedia[data.iconName]
+                  }`}
                 />
-                <p className="dark:hover:text-white duration-300">
+                <p className="dark:hover:text-white duration-500">
                   {data.title}
                 </p>
               </Link>
