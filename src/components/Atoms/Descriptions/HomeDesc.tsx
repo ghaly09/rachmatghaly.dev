@@ -7,7 +7,9 @@ import Link from "next/link";
 import { BsFillFileEarmarkTextFill } from "react-icons/bs";
 import clsx from "clsx";
 import { homeConfig } from "@/src/config/home-config";
-import { IconTech } from "../Icons/IconTech";
+import { IconWithTooltip } from "../Icons/IconWithTooltip";
+import { HoverBorderGradientWrapper } from "../../Molecules/Wrappers/GradientHover.wrapper";
+import { HoverBorderGradient } from "../../ui/hover-border-gradient";
 
 export default function HomeDesc() {
   const [ghalyEffect, setGhalyEffect] = React.useState("");
@@ -55,9 +57,11 @@ export default function HomeDesc() {
 
       <div className="flex flex-row gap-5 mt-5">
         <Reveal delay={0.5} duration={0.5}>
-          <Button
-            className="relative z-30 dark:bg-[#0e1111] border-[1px] border-slate-600 text-sm sm:text-[15px] font-ghaly font-semibold rounded-sm cursor-pointer dark:hover:bg-gray-800 hover:duration-300"
-            variant={"outline"}
+          <HoverBorderGradient
+            containerClassName={
+              "rounded-xl dark:bg-[#0e1111] border-0 m-1 active:scale-[0.93] hover:scale-[1.02] hover:duration-300"
+            }
+            className="relative z-30 px-5 py-3 border-[1px] border-slate-600 text-sm sm:text-[15px] font-ghaly font-semibold rounded-xl cursor-pointer dark:hover:bg-gray-950 hover:duration-300"
           >
             <Link
               href={homeConfig.resume}
@@ -68,7 +72,7 @@ export default function HomeDesc() {
               <BsFillFileEarmarkTextFill className="mr-2 h-[18px] w-[18px]" />{" "}
               Resume
             </Link>
-          </Button>
+          </HoverBorderGradient>
         </Reveal>
 
         {/* Work Status and Resume */}
@@ -91,16 +95,16 @@ export default function HomeDesc() {
                 onMouseOut={() => setHoverSocialMedia({ [data.iconName]: "" })}
                 passHref
               >
-                <IconTech
+                <IconWithTooltip
                   icon={data.icon}
                   iconName={data.iconName}
                   className={`bg-transparent pr-[1px] text-[18px] duration-500 ${
                     hoverSocialMedia[data.iconName]
                   }`}
                 />
-                <p className="dark:hover:text-white duration-500">
+                {/* <p className="dark:hover:text-white duration-500">
                   {data.title}
-                </p>
+                </p> */}
               </Link>
             );
           })}
