@@ -15,6 +15,7 @@ export default function HomeDesc() {
   const [ghalyEffect, setGhalyEffect] = React.useState("");
   const [hoverSocialMedia, setHoverSocialMedia] = React.useState<any>({
     Figma: "",
+    Twitter: "",
     GitHub: "",
   });
 
@@ -61,7 +62,7 @@ export default function HomeDesc() {
             containerClassName={
               "rounded-xl dark:bg-[#0e1111] border-0 m-1 active:scale-[0.93] hover:scale-[1.02] hover:duration-300"
             }
-            className="relative z-30 px-5 py-3 border-[1px] border-slate-600 text-sm sm:text-[15px] font-ghaly font-semibold rounded-xl cursor-pointer dark:hover:bg-gray-950 hover:duration-300"
+            className="relative z-30 px-5 py-3 border-[1px] dark:border-gray-600 text-sm sm:text-[15px] font-ghaly font-semibold rounded-xl cursor-pointer dark:hover:bg-gray-950 hover:duration-300"
           >
             <Link
               href={homeConfig.resume}
@@ -88,7 +89,7 @@ export default function HomeDesc() {
                 href={data.directLink}
                 target="_blank"
                 key={index}
-                className={`flex flex-row gap-1 items-center text-[16px] cursor-pointer font-semibold text-gray-500 dark:text-slate-400 hover:text-gray-900`}
+                className={`flex flex-row gap-1 items-center text-[16px] cursor-pointer font-semibold text-gray-500 dark:text-slate-300 hover:text-gray-900`}
                 onMouseOver={() =>
                   setHoverSocialMedia({ [data.iconName]: data.color })
                 }
@@ -98,7 +99,7 @@ export default function HomeDesc() {
                 <IconWithTooltip
                   icon={data.icon}
                   iconName={data.iconName}
-                  className={`bg-transparent pr-[1px] text-[18px] duration-500 ${
+                  className={`bg-transparent sm:text-lg scale-110 duration-500 ${
                     hoverSocialMedia[data.iconName]
                   }`}
                 />
