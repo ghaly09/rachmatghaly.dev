@@ -10,7 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
 import SeeMore from "../../Atoms/Buttons/Button-SeeMore";
-import { IconTech } from "../../Atoms/Icons/IconTech";
+import { IconWithTooltip } from "../../Atoms/Icons/IconWithTooltip";
 import { Skeleton } from "../../ui/skeleton";
 
 export default function CardProject({
@@ -47,7 +47,7 @@ export default function CardProject({
         {/* Icons Tech */}
         <div className="absolute top-1/2 right-3 z-40 flex flex-row rounded-t-[3px] py-[5px] px-1 bg-white dark:bg-[#0e1111] ">
           {technologies.map((tech: any, index: number) => (
-            <IconTech
+            <IconWithTooltip
               key={index}
               icon={tech.icon}
               iconName={tech.iconName}
