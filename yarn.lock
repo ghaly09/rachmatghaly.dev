@@ -304,10 +304,10 @@
     "@babel/helper-validator-identifier" "^7.22.5"
     to-fast-properties "^2.0.0"
 
-"@cloudinary/html@^1.11.2":
-  version "1.11.2"
-  resolved "https://registry.npmjs.org/@cloudinary/html/-/html-1.11.2.tgz"
-  integrity sha512-IibBZliI7MOK3dxvz0WlsEyTIsqZhY3SiCBQM0CNwCKxn3N1TO8OgetfU26Now1lJbdoF5JQ8S7Cn6ZWNuU1KA==
+"@cloudinary/html@^1.13.4":
+  version "1.13.4"
+  resolved "https://registry.yarnpkg.com/@cloudinary/html/-/html-1.13.4.tgz#5fdc38b90fd33882e2b6e612bb4959542ecb031d"
+  integrity sha512-noBk9D2VZgZkQIs5/y29OsJDmwp0FtgAlKrrp1+0Jp2HMu+68sdDJ3zi4/ZuLCnbdqthGuxP83trowG+Zsa68Q==
   dependencies:
     "@types/lodash.clonedeep" "^4.5.6"
     "@types/lodash.debounce" "^4.0.6"
@@ -316,12 +316,12 @@
     lodash.debounce "^4.0.8"
     typescript "^4.1.2"
 
-"@cloudinary/react@^1.11.2":
-  version "1.11.2"
-  resolved "https://registry.npmjs.org/@cloudinary/react/-/react-1.11.2.tgz"
-  integrity sha512-ZnVthMW7TExLMPmyven4N7EVr2oX2yZqnHn6EHBlni9iM0AZd6qtR8R5/SscxNLNwgBieWuvmejUlUT4LqPpMg==
+"@cloudinary/react@^1.14.3":
+  version "1.14.3"
+  resolved "https://registry.yarnpkg.com/@cloudinary/react/-/react-1.14.3.tgz#744e49e701d961e9e4a34a66dd4ee3dcff0cc2fb"
+  integrity sha512-AJ662pNAGEapRdkOOQstQHiKtXHBdoNkduWU3levugZ34ZiabBxmViISo16MtxZuBkzj96sV9ppmcq6foPqJ2w==
   dependencies:
-    "@cloudinary/html" "^1.11.2"
+    "@cloudinary/html" "^1.13.4"
 
 "@cloudinary/transformation-builder-sdk@^1.5.1":
   version "1.5.1"
