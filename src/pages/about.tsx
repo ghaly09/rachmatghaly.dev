@@ -14,7 +14,7 @@ import { aboutConfig } from "../config/about-config";
 
 export default function About() {
   return (
-    <section id="about">
+    <section id="about" className="overflow-x-hidden relative">
       {/* About Me */}
       <AboutTitleMotion>
         <AboutTitle />

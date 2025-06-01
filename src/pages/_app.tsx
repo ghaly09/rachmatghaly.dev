@@ -3,7 +3,7 @@ import { AppProps } from "next/app";
 import "../styles/globals.css";
 import React from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+// import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import Layout from "../components/Templates/Layout";
 import NextNProgress from "nextjs-progressbar";
 
@@ -18,7 +18,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <QueryClientProvider client={queryClient}>
-        <ReactQueryDevtools />
+        {/* <ReactQueryDevtools /> */}
         <NextNProgress
           color={colorLoadingBar}
           startPosition={0.3}
