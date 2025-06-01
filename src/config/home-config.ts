@@ -1,4 +1,4 @@
-import { AiFillGithub } from "react-icons/ai";
+import { FaTwitter, FaGithub } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
 import { IconType } from "react-icons/lib";
 
@@ -26,10 +26,17 @@ export const homeConfig: homeTypes = {
       directLink: "https://www.figma.com/@ghalyprojects",
     },
     {
-      icon: AiFillGithub,
+      icon: FaTwitter,
+      iconName: "Twitter",
+      title: "ghaly09",
+      color: "text-sky-500",
+      directLink: "https://x.com/Ghalx09",
+    },
+    {
+      icon: FaGithub,
       iconName: "GitHub",
       title: "ghaly09",
-      color: "text-white",
+      color: "dark:text-white text-black",
       directLink: "https://github.com/ghaly09",
     },
   ],
