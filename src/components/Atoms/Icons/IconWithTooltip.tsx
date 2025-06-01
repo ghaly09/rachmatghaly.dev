@@ -13,16 +13,16 @@ interface propIcon {
   className: string;
 }
 
-export function IconTech({ icon, iconName, className }: propIcon) {
+export function IconWithTooltip({ icon, iconName, className }: propIcon) {
   //   console.log(iconName)
 
   return (
-    <TooltipProvider>
+    <TooltipProvider delayDuration={100}>
       <Tooltip>
         <TooltipTrigger asChild>
           <span className={className}>{React.createElement(eval(icon))}</span>
         </TooltipTrigger>
-        <TooltipContent>
+        <TooltipContent className="dark:bg-muted border-0 text-sm">
           <p>{iconName}</p>
         </TooltipContent>
       </Tooltip>
