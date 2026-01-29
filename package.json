@@ -25,7 +25,7 @@
     "button": "^1.1.1",
     "class-variance-authority": "^0.6.1",
     "clsx": "^2.0.0",
-    "eslint": "^8.56.0",
+    "eslint": "^9.39.2",
     "eslint-config-next": "^13.5.6",
     "eslint-plugin-react-hooks": "^5.0.0-canary-587ae49d7-20230720",
     "framer-motion": "^10.16.16",
